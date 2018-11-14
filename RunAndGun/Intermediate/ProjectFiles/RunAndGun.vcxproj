@@ -418,8 +418,10 @@
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Source\RunAndGun\RunAndGun.Build.cs" />
     <ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp" />
+    <ClCompile Include="..\..\Source\RunAndGun\Projectile.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\RunAndGun.cpp" />
     <ClInclude Include="..\..\Source\RunAndGun\PlayerCharacter.h" />
+    <ClInclude Include="..\..\Source\RunAndGun\Projectile.h" />
     <ClInclude Include="..\..\Source\RunAndGun\RunAndGun.h" />
     <ClCompile Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.cpp" />
     <ClInclude Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.h" />

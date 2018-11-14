@@ -46,9 +46,15 @@
     <ClInclude Include="..\..\Source\RunAndGun\PlayerCharacter.h">
       <Filter>Source\RunAndGun</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\RunAndGun\Projectile.h">
+      <Filter>Source\RunAndGun</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp">
+      <Filter>Source\RunAndGun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RunAndGun\Projectile.cpp">
       <Filter>Source\RunAndGun</Filter>
     </ClCompile>
   </ItemGroup>
