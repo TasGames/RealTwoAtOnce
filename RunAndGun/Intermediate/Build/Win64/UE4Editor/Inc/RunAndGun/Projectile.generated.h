@@ -93,6 +93,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AProjectile); \
 
 #define RunAndGun_Source_RunAndGun_Projectile_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ProjectileMesh() { return STRUCT_OFFSET(AProjectile, ProjectileMesh); } \
+	FORCEINLINE static uint32 __PPO__CollisionComp() { return STRUCT_OFFSET(AProjectile, CollisionComp); } \
 	FORCEINLINE static uint32 __PPO__ProjectileMovement() { return STRUCT_OFFSET(AProjectile, ProjectileMovement); }
 
 

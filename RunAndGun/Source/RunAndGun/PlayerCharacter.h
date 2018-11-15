@@ -21,14 +21,38 @@ class RUNANDGUN_API APlayerCharacter : public ACharacter
 
 protected:
 
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+	TSubclassOf<class AProjectile> ProjectileClass;
+
+	/** Offset from the ships location to spawn projectiles */
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	FVector GunOffset;
+
+	/* How fast the weapon will fire */
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	float FireRate;
+
 	/** Called for side to side input */
 	void MoveRight(float Val);
 
+	/* Fire a shot in the specified direction */
+	void FireShot(FVector FireDirection);
+
+	/* Handler for the fire timer expiry */
+	void ShotTimerExpired();
+
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+
+	bool CanFire;
+
+	/** Handle for efficient management of ShotTimerExpired timer */
+	FTimerHandle TimerHandle_ShotTimerExpired;
 
 
 public:
 	APlayerCharacter();
+
+	virtual void Tick(float DeltaSeconds) override;
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }

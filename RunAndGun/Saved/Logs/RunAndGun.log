@@ -1,4 +1,4 @@
-﻿Log file open, 11/14/18 12:51:23
+﻿Log file open, 11/15/18 10:06:17
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -8,7 +8,7 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: RunAndGun
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.192480
+LogStats: Stats thread started at 0.182819
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -91,7 +91,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.201s to configure plugins.
+LogStreaming: Display: Took  0.155s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -148,584 +148,889 @@ LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
 LogStreaming: Display: Took  0.000s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.11.14-12.51.23:923][  0]LogInit: Selected Device Profile: [Windows]
-[2018.11.14-12.51.23:923][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.11.14-12.51.23:935][  0]LogHAL: Display: Platform has ~ 16 GB [17116667904 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.11.14-12.51.23:935][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
-[2018.11.14-12.51.23:935][  0]LogInit: Going up to parent DeviceProfile []
-[2018.11.14-12.51.23:935][  0]LogInit: Computer: DESKTOP-C6U4EA4
-[2018.11.14-12.51.23:935][  0]LogInit: User: ThomasSimon
-[2018.11.14-12.51.23:935][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.11.14-12.51.23:935][  0]LogInit: High frequency timer resolution =3.234378 MHz
-[2018.11.14-12.51.23:935][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.11.14-12.51.23:935][  0]LogMemory: Platform Memory Stats for Windows
-[2018.11.14-12.51.23:935][  0]LogMemory: Process Physical Memory: 100.30 MB used, 100.30 MB peak
-[2018.11.14-12.51.23:935][  0]LogMemory: Process Virtual Memory: 84.35 MB used, 84.35 MB peak
-[2018.11.14-12.51.23:935][  0]LogMemory: Physical Memory: 4706.23 MB used,  11617.49 MB free, 16323.73 MB total
-[2018.11.14-12.51.23:935][  0]LogMemory: Virtual Memory: 4625.40 MB used,  11617.49 MB free, 134217728.00 MB total
-[2018.11.14-12.51.23:957][  0]LogInit: Using OS detected language (en-GB).
-[2018.11.14-12.51.23:957][  0]LogInit: Using OS detected locale (en-GB).
-[2018.11.14-12.51.23:958][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
-[2018.11.14-12.51.24:333][  0]LogStreaming: Display: Took  0.376s to InitEngineTextLocalization.
-[2018.11.14-12.51.24:333][  0]LogInit: Setting process to per monitor DPI aware
-[2018.11.14-12.51.24:371][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.11.14-12.51.24:371][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.11.14-12.51.24:538][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.11.14-12.51.24:538][  0]LogD3D11RHI: D3D11 adapters:
-[2018.11.14-12.51.24:607][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
-[2018.11.14-12.51.24:607][  0]LogD3D11RHI:       4043/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
-[2018.11.14-12.51.24:609][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.11.14-12.51.24:609][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.11.14-12.51.24:609][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.11.14-12.51.24:614][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.11.14-12.51.24:614][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
-[2018.11.14-12.51.24:614][  0]LogWindows: EnumDisplayDevices:
-[2018.11.14-12.51.24:614][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.11.14-12.51.24:615][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
-[2018.11.14-12.51.24:615][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:1 D:1)
-[2018.11.14-12.51.24:615][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
-[2018.11.14-12.51.24:615][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2018.11.14-12.51.24:615][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
-[2018.11.14-12.51.24:615][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
-[2018.11.14-12.51.24:615][  0]LogD3D11RHI:      Driver Date: 6-1-2018
-[2018.11.14-12.51.24:615][  0]LogRHI: Texture pool is 2830 MB (70% of 4043 MB)
-[2018.11.14-12.51.24:645][  0]LogD3D11RHI: Async texture creation enabled
-[2018.11.14-12.51.24:661][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.11.14-12.51.24:713][  0]LogShaderCompilers: Guid format shader working directory is -5 characters bigger than the processId version (A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Intermediate/Shaders/WorkingDirectory/8128/).
-[2018.11.14-12.51.24:713][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Thomas Simon/AppData/Local/Temp/UnrealShaderWorkingDir/E6AD83A941B1FE2F0F157289B22481C5/'.
-[2018.11.14-12.51.24:972][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.11.14-12.51.24:988][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.11.14-12.51.25:001][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.11.14-12.51.25:013][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.11.14-12.51.25:026][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.11.14-12.51.25:039][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.11.14-12.51.25:056][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.11.14-12.51.25:068][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.11.14-12.51.25:083][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:156][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:157][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.11.14-12.51.25:158][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.11.14-12.51.25:216][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.11.14-12.51.25:216][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.11.14-12.51.25:239][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.11.14-12.51.25:239][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.11.14-12.51.25:251][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.11.14-12.51.25:263][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.11.14-12.51.25:274][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.11.14-12.51.25:287][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.11.14-12.51.25:296][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.11.14-12.51.25:296][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.11.14-12.51.25:351][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.11.14-12.51.25:351][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.11.14-12.51.25:351][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.11.14-12.51.26:072][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: Loaded boot cache 0.06s 73MB C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.11.14-12.51.26:130][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.11.14-12.51.26:142][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.11.14-12.51.26:155][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Thomas Simon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.11.14-12.51.26:155][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.11.14-12.51.26:155][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.11.14-12.51.26:173][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.11.14-12.51.26:174][  0]LogSlate: Using FreeType 2.6.0
-[2018.11.14-12.51.26:175][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.11.14-12.51.26:247][  0]LogAssetRegistry: FAssetRegistry took 0.0254 seconds to start up
-[2018.11.14-12.51.26:553][  0]LogInit: Selected Device Profile: [Windows]
-[2018.11.14-12.51.26:689][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.11.14-12.51.26:692][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.11.14-12.51.26:692][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.11.14-12.51.26:693][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.11.14-12.51.26:693][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.11.14-12.51.26:716][  0]LogNetVersion: RunAndGun 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2764751435)
-[2018.11.14-12.51.27:257][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.144811 seconds
-[2018.11.14-12.51.27:264][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
-[2018.11.14-12.51.27:264][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
-[2018.11.14-12.51.27:264][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.11.14-12.51.28:071][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.11.14-12.51.28:083][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.11.14-12.51.28:350][  0]SourceControl: Source control is disabled
-[2018.11.14-12.51.28:350][  0]SourceControl: Source control is disabled
-[2018.11.14-12.51.28:352][  0]SourceControl: Source control is disabled
-[2018.11.14-12.51.28:353][  0]SourceControl: Source control is disabled
-[2018.11.14-12.51.28:516][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.11.14-12.51.28:565][  0]LogOcInput: OculusInput pre-init called
-[2018.11.14-12.51.28:619][  0]LogEngine: Initializing Engine...
-[2018.11.14-12.51.28:620][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.11.14-12.51.28:621][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.11.14-12.51.28:621][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.11.14-12.51.28:621][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.11.14-12.51.28:621][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.11.14-12.51.28:816][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.11.14-12.51.28:828][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.11.14-12.51.28:846][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.51.28:863][  0]LogInit: FAudioDevice initialized.
-[2018.11.14-12.51.28:863][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.11.14-12.51.28:952][  0]LogDerivedDataCache: Saved boot cache 0.09s 73MB C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
-[2018.11.14-12.51.28:965][  0]LogInit: Texture streaming: Enabled
-[2018.11.14-12.51.28:981][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.11.14-12.51.29:007][  0]LogInit: Transaction tracking system initialized
-[2018.11.14-12.51.29:039][  0]BlueprintLog: New page: Editor Load
-[2018.11.14-12.51.29:137][  0]LocalizationService: Localization service is disabled
-[2018.11.14-12.51.29:392][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.11.14-12.51.29:392][  0]LogCook: Display: Mobile HDR setting 1
-[2018.11.14-12.51.29:392][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.11.14-12.51.29:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.11.14-12.51.29:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.11.14-12.51.29:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.11.14-12.51.29:392][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.11.14-12.51.29:502][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/' took 0.01s
-[2018.11.14-12.51.29:502][  0]SourceControl: Source control is disabled
-[2018.11.14-12.51.29:502][  0]Cmd: MAP LOAD FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.11.14-12.51.29:502][  0]LightingResults: New page: Lighting Build
-[2018.11.14-12.51.29:505][  0]MapCheck: New page: Map Check
-[2018.11.14-12.51.29:505][  0]LightingResults: New page: Lighting Build
-[2018.11.14-12.51.29:724][  0]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.51.29:730][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.11.14-12.51.29:752][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.11.14-12.51.29:811][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 58.96ms to complete.
-[2018.11.14-12.51.29:811][  0]LogFileHelpers: Loading map 'Main' took 0.309
-[2018.11.14-12.51.30:079][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.51.30:087][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.51.30:093][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.51.30:104][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.51.30:114][  0]LogCollectionManager: Loaded 0 collections in 0.001940 seconds
-[2018.11.14-12.51.30:177][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Collections/' took 0.01s
-[2018.11.14-12.51.30:177][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/Developers/ThomasSimon/Collections/' took 0.01s
-[2018.11.14-12.51.30:177][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/Collections/' took 0.01s
-[2018.11.14-12.51.30:177][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.11.14-12.51.30:188][  0]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2575 classes and 607 folders.
-[2018.11.14-12.51.30:200][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2018.11.14-12.51.31:138][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.11.14-12.51.33:101][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
-[2018.11.14-12.51.33:172][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.RunAndGun
-[2018.11.14-12.51.33:172][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.11.14-12.51.33:172][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.20
-[2018.11.14-12.51.33:172][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
-[2018.11.14-12.51.33:172][  0]LogTemp: BranchPath = DESKTOP-C6U4EA4/C/Program Files/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = DESKTOP-C6U4EA4/C/Program Files/Epic Games/UE_4.20/Engine/Binaries
-[2018.11.14-12.51.33:172][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Thomas Simon\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
-[2018.11.14-12.51.33:172][  0]LogSlate: Took 0.000168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.11.14-12.51.33:176][  0]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.11.14-12.51.33:183][  0]LogSlate: Took 0.002159 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.11.14-12.51.33:296][  0]LogRenderer: Reallocating scene render targets to support 1152x600 Format 10 NumSamples 1 (Frame:1).
-[2018.11.14-12.51.33:417][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2018.11.14-12.51.33:417][  0]LogLoad: (Engine Initialization) Total time: 11.01 seconds
-[2018.11.14-12.51.33:417][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.11.14-12.51.33:427][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.11.14-12.51.33:454][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.11.14-12.51.33:514][  0]LogSlate: Took 0.002338 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.11.14-12.51.33:540][  1]LogAssetRegistry: Asset discovery search completed in 7.3151 seconds
-[2018.11.14-12.51.33:542][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.11.14-12.51.33:542][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000055 seconds (updated 0 objects)
-[2018.11.14-12.51.34:445][104]LogSlate: Took 0.000225 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.11.14-12.51.38:666][609]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.51.39:402][625]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_PlayerCharacter.Bp_PlayerCharacter
-[2018.11.14-12.51.40:078][625]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 116 classes and 0 folders.
-[2018.11.14-12.51.44:016][966]LogSlate: Window 'Bp_PlayerCharacter' being destroyed
-[2018.11.14-12.51.47:925][434]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.51.48:156][448]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_PlayerCharacter.Bp_PlayerCharacter
-[2018.11.14-12.51.48:457][448]LogSlate: Took 0.001503 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2018.11.14-12.51.50:247][646]LogSlate: Window 'Bp_PlayerCharacter' being destroyed
-[2018.11.14-12.51.51:415][782]LogRenderer: Reallocating scene render targets to support 1152x900 Format 10 NumSamples 1 (Frame:1).
-[2018.11.14-12.51.56:991][408]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.51.57:005][408]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.51.57:019][408]PIE: New page: PIE session: Main (14 Nov 2018 12:51:57)
-[2018.11.14-12.51.57:019][408]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.51.57:023][408]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004229s)
-[2018.11.14-12.51.57:024][408]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.51.57:024][408]LogPlayLevel: PIE: World Init took: (0.000621s)
-[2018.11.14-12.51.57:024][408]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004996s)
-[2018.11.14-12.51.57:065][408]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.51.57:074][408]LogInit: FAudioDevice initialized.
-[2018.11.14-12.51.57:150][408]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.51.57:152][408]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.51.57
-[2018.11.14-12.51.57:152][408]LogWorld: Bringing up level for play took: 0.000557
-[2018.11.14-12.51.57:186][408]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
-[2018.11.14-12.51.57:188][408]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 1.071
-[2018.11.14-12.52.02:620][ 53]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.52.02:654][ 53]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.52.02:683][ 53]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.52.02:726][ 56]LogPlayLevel: Display: Destroying online subsystem :Context_5
-[2018.11.14-12.52.07:069][577]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.52.11:699][131]LogSlate: Took 0.001136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.11.14-12.52.39:458][457]LogAssetEditorManager: Opening Asset editor for Class /Script/RunAndGun.PlayerCharacter
-[2018.11.14-12.53.58:864][843]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.54.11:868][301]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.54.11:951][311]BlueprintLog: New page: Compile Bp_PlayerCharacter
-[2018.11.14-12.54.12:911][392]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_PlayerCharacter72938C7142B3684A56FFDBAD132CF7DA.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_PlayerCharacter.uasset'
-[2018.11.14-12.54.14:415][571]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.54.14:428][571]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.54.14:428][571]PIE: New page: PIE session: Main (14 Nov 2018 12:54:14)
-[2018.11.14-12.54.14:428][571]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.54.14:431][571]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003253s)
-[2018.11.14-12.54.14:432][571]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.54.14:432][571]LogPlayLevel: PIE: World Init took: (0.000725s)
-[2018.11.14-12.54.14:432][571]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004104s)
-[2018.11.14-12.54.14:467][571]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.54.14:477][571]LogInit: FAudioDevice initialized.
-[2018.11.14-12.54.14:510][571]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.54.14:511][571]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.54.14
-[2018.11.14-12.54.14:511][571]LogWorld: Bringing up level for play took: 0.000564
-[2018.11.14-12.54.14:524][571]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.407
-[2018.11.14-12.54.20:252][256]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.54.20:283][256]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.54.20:312][256]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.54.20:359][261]LogPlayLevel: Display: Destroying online subsystem :Context_7
-[2018.11.14-12.55.37:363][353]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.55.37:453][364]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.55.37:468][364]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.55.37:468][364]PIE: New page: PIE session: Main (14 Nov 2018 12:55:37)
-[2018.11.14-12.55.37:468][364]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.55.37:471][364]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003122s)
-[2018.11.14-12.55.37:472][364]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.55.37:472][364]LogPlayLevel: PIE: World Init took: (0.000800s)
-[2018.11.14-12.55.37:472][364]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004064s)
-[2018.11.14-12.55.37:509][364]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.55.37:521][364]LogInit: FAudioDevice initialized.
-[2018.11.14-12.55.37:553][364]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.55.37:554][364]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.55.37
-[2018.11.14-12.55.37:554][364]LogWorld: Bringing up level for play took: 0.000554
-[2018.11.14-12.55.37:567][364]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.55
-[2018.11.14-12.55.47:774][573]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.55.47:805][573]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.55.47:835][573]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.55.47:843][574]LogPlayLevel: Display: Destroying online subsystem :Context_8
-[2018.11.14-12.55.57:512][687]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.56.05:033][585]BlueprintLog: New page: Compile Bp_PlayerCharacter
-[2018.11.14-12.56.05:903][664]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_PlayerCharacter8C2195164D423FBFA39AD7B3294A6301.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_PlayerCharacter.uasset'
-[2018.11.14-12.56.07:393][842]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.56.07:406][842]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.56.07:406][842]PIE: New page: PIE session: Main (14 Nov 2018 12:56:07)
-[2018.11.14-12.56.07:407][842]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.56.07:410][842]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003209s)
-[2018.11.14-12.56.07:410][842]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.56.07:410][842]LogPlayLevel: PIE: World Init took: (0.000626s)
-[2018.11.14-12.56.07:410][842]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.003950s)
-[2018.11.14-12.56.07:441][842]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.56.07:452][842]LogInit: FAudioDevice initialized.
-[2018.11.14-12.56.07:485][842]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.56.07:486][842]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.56.07
-[2018.11.14-12.56.07:486][842]LogWorld: Bringing up level for play took: 0.000556
-[2018.11.14-12.56.07:499][842]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.617
-[2018.11.14-12.56.12:253][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.12:289][410]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.56.12:318][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.12:357][414]LogPlayLevel: Display: Destroying online subsystem :Context_9
-[2018.11.14-12.56.13:258][522]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.56.22:891][669]BlueprintLog: New page: Compile Bp_PlayerCharacter
-[2018.11.14-12.56.23:521][719]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_PlayerCharacter222C8B204F7412936AA9BB9162920CAF.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_PlayerCharacter.uasset'
-[2018.11.14-12.56.25:020][897]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.56.25:033][897]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.56.25:033][897]PIE: New page: PIE session: Main (14 Nov 2018 12:56:25)
-[2018.11.14-12.56.25:033][897]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.56.25:036][897]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002669s)
-[2018.11.14-12.56.25:037][897]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.56.25:037][897]LogPlayLevel: PIE: World Init took: (0.000668s)
-[2018.11.14-12.56.25:037][897]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.003510s)
-[2018.11.14-12.56.25:070][897]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.56.25:079][897]LogInit: FAudioDevice initialized.
-[2018.11.14-12.56.25:109][897]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.56.25:110][897]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.56.25
-[2018.11.14-12.56.25:110][897]LogWorld: Bringing up level for play took: 0.000552
-[2018.11.14-12.56.25:123][897]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 1.006
-[2018.11.14-12.56.45:006][225]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.45:040][225]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.56.45:070][225]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.45:113][229]LogPlayLevel: Display: Destroying online subsystem :Context_10
-[2018.11.14-12.56.47:010][456]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.56.47:109][468]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.56.47:124][468]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.56.47:124][468]PIE: New page: PIE session: Main (14 Nov 2018 12:56:47)
-[2018.11.14-12.56.47:124][468]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.56.47:127][468]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002715s)
-[2018.11.14-12.56.47:127][468]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.56.47:128][468]LogPlayLevel: PIE: World Init took: (0.000738s)
-[2018.11.14-12.56.47:128][468]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.003586s)
-[2018.11.14-12.56.47:175][468]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.56.47:188][468]LogInit: FAudioDevice initialized.
-[2018.11.14-12.56.47:219][468]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.56.47:220][468]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.56.47
-[2018.11.14-12.56.47:221][468]LogWorld: Bringing up level for play took: 0.000606
-[2018.11.14-12.56.47:234][468]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.884
-[2018.11.14-12.56.53:336][197]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.53:368][197]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.56.53:398][197]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.56.53:436][201]LogPlayLevel: Display: Destroying online subsystem :Context_11
-[2018.11.14-12.57.12:884][ 42]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.57.39:150][463]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2018.11.14-12.57.45:600][182]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.11.14-12.57.46:817][305]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2018.11.14-12.57.50:833][762]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-12.57.50:933][774]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-12.57.50:948][774]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-12.57.50:948][774]PIE: New page: PIE session: Main (14 Nov 2018 12:57:50)
-[2018.11.14-12.57.50:948][774]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-12.57.50:951][774]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003347s)
-[2018.11.14-12.57.50:952][774]LogAIModule: Creating AISystem for world Main
-[2018.11.14-12.57.50:952][774]LogPlayLevel: PIE: World Init took: (0.000646s)
-[2018.11.14-12.57.50:952][774]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004123s)
-[2018.11.14-12.57.50:988][774]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-12.57.51:003][774]LogInit: FAudioDevice initialized.
-[2018.11.14-12.57.51:038][774]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-12.57.51:039][774]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-12.57.51
-[2018.11.14-12.57.51:039][774]LogWorld: Bringing up level for play took: 0.000642
-[2018.11.14-12.57.51:053][774]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.935
-[2018.11.14-12.58.05:205][455]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.58.05:240][455]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-12.58.05:269][455]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-12.58.05:308][459]LogPlayLevel: Display: Destroying online subsystem :Context_12
-[2018.11.14-12.59.47:211][955]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.00.11:476][835]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.00.11:576][847]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-13.00.11:592][847]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-13.00.11:592][847]PIE: New page: PIE session: Main (14 Nov 2018 13:00:11)
-[2018.11.14-13.00.11:592][847]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-13.00.11:595][847]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004254s)
-[2018.11.14-13.00.11:596][847]LogAIModule: Creating AISystem for world Main
-[2018.11.14-13.00.11:596][847]LogPlayLevel: PIE: World Init took: (0.000913s)
-[2018.11.14-13.00.11:596][847]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005298s)
-[2018.11.14-13.00.11:637][847]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-13.00.11:648][847]LogInit: FAudioDevice initialized.
-[2018.11.14-13.00.11:679][847]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-13.00.11:680][847]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-13.00.11
-[2018.11.14-13.00.11:681][847]LogWorld: Bringing up level for play took: 0.000749
-[2018.11.14-13.00.11:695][847]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.422
-[2018.11.14-13.00.22:789][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.00.22:823][169]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-13.00.22:853][169]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.00.22:893][173]LogPlayLevel: Display: Destroying online subsystem :Context_13
-[2018.11.14-13.00.38:126][993]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.00.38:239][  3]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.11.14-13.00.38:302][  3]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main38ECC9C34499520CF623E1A7691072AF.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
-[2018.11.14-13.00.38:325][  3]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main_BuiltData" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset" SILENT=true
-[2018.11.14-13.00.38:344][  3]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main_BuiltDataC044A9A54663A9BEA8EC819A8E606D1B.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset'
-[2018.11.14-13.00.55:482][ 53]Cmd: BRUSH ADD SELECTNEWBRUSH
-[2018.11.14-13.00.59:136][485]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.01.32:267][366]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.01.44:761][858]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.11.14-13.01.45:725][969]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
-[2018.11.14-13.01.59:842][606]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.02.06:540][398]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.02.18:869][867]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
-[2018.11.14-13.02.22:189][249]Cmd: TRANSACTION UNDO
-[2018.11.14-13.02.22:189][249]LogEditorTransaction: Undo Select Brush Surface
-[2018.11.14-13.02.22:695][296]Cmd: TRANSACTION UNDO
-[2018.11.14-13.02.22:695][296]LogEditorTransaction: Undo Clicking on Actors
-[2018.11.14-13.02.23:114][342]Cmd: TRANSACTION UNDO
-[2018.11.14-13.02.23:114][342]LogEditorTransaction: Undo Select Brush Surface
-[2018.11.14-13.02.23:555][392]Cmd: TRANSACTION UNDO
-[2018.11.14-13.02.23:555][392]LogEditorTransaction: Undo Edit X
-[2018.11.14-13.02.24:153][460]Cmd: TRANSACTION UNDO
-[2018.11.14-13.02.24:153][460]LogEditorTransaction: Undo Edit X
-[2018.11.14-13.02.29:478][ 84]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.02.36:952][973]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.02.37:051][985]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-13.02.37:065][985]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-13.02.37:065][985]PIE: New page: PIE session: Main (14 Nov 2018 13:02:37)
-[2018.11.14-13.02.37:065][985]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-13.02.37:069][985]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003836s)
-[2018.11.14-13.02.37:070][985]LogAIModule: Creating AISystem for world Main
-[2018.11.14-13.02.37:070][985]LogPlayLevel: PIE: World Init took: (0.000691s)
-[2018.11.14-13.02.37:070][985]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004652s)
-[2018.11.14-13.02.37:107][985]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-13.02.37:118][985]LogInit: FAudioDevice initialized.
-[2018.11.14-13.02.37:152][985]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-13.02.37:153][985]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-13.02.37
-[2018.11.14-13.02.37:153][985]LogWorld: Bringing up level for play took: 0.000672
-[2018.11.14-13.02.37:167][985]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 1.05
-[2018.11.14-13.02.54:622][ 73]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.02.54:657][ 73]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-13.02.54:686][ 73]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.02.54:728][ 76]LogPlayLevel: Display: Destroying online subsystem :Context_14
-[2018.11.14-13.02.55:704][193]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.03.03:604][121]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.03.03:720][135]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-13.03.03:733][135]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-13.03.03:733][135]PIE: New page: PIE session: Main (14 Nov 2018 13:03:03)
-[2018.11.14-13.03.03:733][135]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-13.03.03:737][135]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003300s)
-[2018.11.14-13.03.03:737][135]LogAIModule: Creating AISystem for world Main
-[2018.11.14-13.03.03:737][135]LogPlayLevel: PIE: World Init took: (0.000694s)
-[2018.11.14-13.03.03:737][135]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004106s)
-[2018.11.14-13.03.03:775][135]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-13.03.03:804][135]LogInit: FAudioDevice initialized.
-[2018.11.14-13.03.03:837][135]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-13.03.03:838][135]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-13.03.03
-[2018.11.14-13.03.03:838][135]LogWorld: Bringing up level for play took: 0.000644
-[2018.11.14-13.03.03:852][135]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.266
-[2018.11.14-13.03.08:098][639]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.03.08:130][639]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-13.03.08:158][639]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.03.08:201][644]LogPlayLevel: Display: Destroying online subsystem :Context_15
-[2018.11.14-13.03.08:659][699]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.04.22:495][233]BlueprintLog: New page: Compile Bp_PlayerCharacter
-[2018.11.14-13.04.23:212][290]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_PlayerCharacter1899B1D943CE26D48FB57D99DF0D4B3F.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_PlayerCharacter.uasset'
-[2018.11.14-13.04.24:736][472]LogTemp: Repeating last play command: Selected Viewport
-[2018.11.14-13.04.24:748][472]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.11.14-13.04.24:749][472]PIE: New page: PIE session: Main (14 Nov 2018 13:04:24)
-[2018.11.14-13.04.24:749][472]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
-[2018.11.14-13.04.24:753][472]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004510s)
-[2018.11.14-13.04.24:754][472]LogAIModule: Creating AISystem for world Main
-[2018.11.14-13.04.24:754][472]LogPlayLevel: PIE: World Init took: (0.000646s)
-[2018.11.14-13.04.24:754][472]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005280s)
-[2018.11.14-13.04.24:791][472]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.11.14-13.04.24:800][472]LogInit: FAudioDevice initialized.
-[2018.11.14-13.04.24:834][472]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
-[2018.11.14-13.04.24:836][472]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.14-13.04.24
-[2018.11.14-13.04.24:836][472]LogWorld: Bringing up level for play took: 0.000699
-[2018.11.14-13.04.24:850][472]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.733
-[2018.11.14-13.04.41:971][515]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.04.42:007][515]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.11.14-13.04.42:038][515]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.11.14-13.04.42:078][519]LogPlayLevel: Display: Destroying online subsystem :Context_16
-[2018.11.14-13.08.01:703][756]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.11.14-13.08.01:823][768]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.11.14-13.08.01:914][768]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main7960120F4D9E16B69B505EB1A1D7F596.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
-[2018.11.14-13.08.01:945][768]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main_BuiltData" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset" SILENT=true
-[2018.11.14-13.08.01:980][768]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main_BuiltData771F02094B2E7E3E0F0CA5B24F202155.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset'
-[2018.11.14-13.08.25:092][460]Running C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -invalidatemakefilesonly
-[2018.11.14-13.08.26:108][460]Invalidating makefiles only in this run.
-[2018.11.14-13.08.26:241][460]Candidate modules for hot reload:
-[2018.11.14-13.08.26:241][460]  RunAndGun
-[2018.11.14-13.08.26:241][460]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,9894 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
-[2018.11.14-13.10.10:169][460]CompilerResultsLog: New page: Compilation - 14 Nov 2018 13:10:10
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Creating makefile for hot reloading RunAndGunEditor (no existing makefile)
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Compiling game modules for hot reload
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Parsing headers for RunAndGunEditor
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.6050681 seconds
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Building 5 actions with 4 processes...
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   [1/5] RunAndGun.init.gen.cpp
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   [2/5] Projectile.cpp
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   [3/5] Projectile.gen.cpp
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   [4/5] UE4Editor-RunAndGun-9894.lib
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9894.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9894.exp
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:   [5/5] UE4Editor-RunAndGun-9894.dll
-[2018.11.14-13.10.10:170][460]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9894.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9894.suppressed.exp
-[2018.11.14-13.10.10:170][460]CompilerResultsLog: Total build time: 103.66 seconds (Parallel executor: 85.13 seconds)
-[2018.11.14-13.10.10:170][460]LogMainFrame: MainFrame: Module compiling took 103.945 seconds
-[2018.11.14-13.10.10:219][460]LogClass: Could not find existing class Projectile in package /Script/RunAndGun for HotReload, assuming new class
-[2018.11.14-13.10.10:225][460]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0006 seconds. Added 3 classes and 2 folders.
-[2018.11.14-13.10.10:229][460]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.11.14-13.10.10:664][460]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 2576 classes and 607 folders.
-[2018.11.14-13.10.10:667][460]Display: HotReload took 104.4s.
-[2018.11.14-13.10.10:668][460]Warning: HotReload operation took 104.4s.
-[2018.11.14-13.10.10:982][460]LogVSAccessor: Warning: Couldn't goto line number '1' in 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Source/RunAndGun/Projectile.h'
-[2018.11.14-13.10.11:798][460]LogVSAccessor: Warning: Couldn't goto line number '1' in 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Source/RunAndGun/Projectile.cpp'
-[2018.11.14-13.10.11:814][460]LogSlate: Window 'Add C++ Class' being destroyed
-[2018.11.14-13.10.11:822][460]LogHotReload: New module detected: UE4Editor-RunAndGun-9894.dll
-[2018.11.14-13.10.11:865][461]LogHotReload: Starting Hot-Reload from IDE
-[2018.11.14-13.10.11:974][461]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 3 classes and 2 folders.
-[2018.11.14-13.10.11:978][461]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.11.14-13.10.12:267][461]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2576 classes and 607 folders.
-[2018.11.14-13.10.12:280][461]Display: HotReload took  0.4s.
-[2018.11.14-13.29.14:867][658]Candidate modules for hot reload:
-[2018.11.14-13.29.14:867][658]  RunAndGun
-[2018.11.14-13.29.14:867][658]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,1248 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
-[2018.11.14-13.29.14:874][658]Warning: Starting HotReload took  0.0s.
-[2018.11.14-13.29.44:436][188]CompilerResultsLog: New page: Compilation - 14 Nov 2018 13:29:44
-[2018.11.14-13.29.44:439][188]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.11.14-13.29.44:439][188]CompilerResultsLog: Compiling game modules for hot reload
-[2018.11.14-13.29.44:439][188]CompilerResultsLog: Parsing headers for RunAndGunEditor
-[2018.11.14-13.29.44:439][188]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.11.14-13.29.44:439][188]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.7852474 seconds
-[2018.11.14-13.29.44:439][188]CompilerResultsLog: Building 5 actions with 4 processes...
-[2018.11.14-13.29.44:439][188]CompilerResultsLog:   [1/5] RunAndGun.init.gen.cpp
-[2018.11.14-13.29.44:439][188]CompilerResultsLog:   [2/5] Projectile.gen.cpp
-[2018.11.14-13.29.44:439][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(20) : error C2143: syntax error: missing ';' before '*'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(20) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(20) : error C2238: unexpected token(s) preceding ';'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(32) : error C2143: syntax error: missing ';' before '*'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(32) : error C2433: 'AProjectile::UProjectileMovementComponent': '__forceinline' not permitted on data declarations
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(32) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(32) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(12) : error C2039: 'ProjectileMovement': is not a member of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(10): note: see declaration of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(12) : error C2618: illegal member designator in offsetof
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(12): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Inc\RunAndGun\Projectile.gen.cpp(154) : error C2039: 'ProjectileMovement': is not a member of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun/Projectile.h(10): note: see declaration of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Inc\RunAndGun\Projectile.gen.cpp(154) : error C2618: illegal member designator in offsetof
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Inc\RunAndGun\Projectile.gen.cpp(154): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   [3/5] Projectile.cpp
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(20) : error C2143: syntax error: missing ';' before '*'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(20) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(20) : error C2238: unexpected token(s) preceding ';'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(32) : error C2143: syntax error: missing ';' before '*'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(32) : error C2433: 'AProjectile::UProjectileMovementComponent': '__forceinline' not permitted on data declarations
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(32) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(32) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(12) : error C2039: 'ProjectileMovement': is not a member of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(10): note: see declaration of 'AProjectile'
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(12) : error C2618: illegal member designator in offsetof
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:   a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\Projectile.h(12): note: offsetof has a builtin meaning; use /Zc:offsetof- to revert to old, non-conforming definition
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(18) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(19) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(20) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(21) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(22) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(23) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\Projectile.cpp(24) : error C2065: 'ProjectileMovement': undeclared identifier
-[2018.11.14-13.29.44:440][188]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Binaries\Win64\UE4Editor-RunAndGun-1248.dll
-[2018.11.14-13.29.44:440][188]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.11.14-13.29.44:440][188]CompilerResultsLog: Total build time: 29.19 seconds (Parallel executor: 0.00 seconds)
-[2018.11.14-13.29.44:440][188]LogMainFrame: MainFrame: Module compiling took 29.589 seconds
-[2018.11.14-13.29.44:441][188]Warning: HotReload failed, recompile failed
-[2018.11.14-13.32.27:209][224]Candidate modules for hot reload:
-[2018.11.14-13.32.27:209][224]  RunAndGun
-[2018.11.14-13.32.27:209][224]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,837 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
-[2018.11.14-13.32.27:215][224]Warning: Starting HotReload took  0.0s.
-[2018.11.14-13.32.58:280][943]CompilerResultsLog: New page: Compilation - 14 Nov 2018 13:32:58
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Compiling game modules for hot reload
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Parsing headers for RunAndGunEditor
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.7460173 seconds
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Building 4 actions with 4 processes...
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:   [1/4] Projectile.gen.cpp
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:   [2/4] Projectile.cpp
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:   [3/4] UE4Editor-RunAndGun-837.lib
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-837.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-837.exp
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:   [4/4] UE4Editor-RunAndGun-837.dll
-[2018.11.14-13.32.58:281][943]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-837.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-837.suppressed.exp
-[2018.11.14-13.32.58:281][943]CompilerResultsLog: Total build time: 30.76 seconds (Parallel executor: 18.07 seconds)
-[2018.11.14-13.32.58:281][943]LogMainFrame: MainFrame: Module compiling took 31.087 seconds
-[2018.11.14-13.32.58:559][943]LogClass: Could not find existing class Projectile in package /Script/RunAndGun for HotReload, assuming new class
-[2018.11.14-13.32.58:560][943]LogClass: Function OnHit is new.
-[2018.11.14-13.32.58:607][943]LogHotReload: Re-instancing Projectile after hot-reload.
-[2018.11.14-13.32.58:800][943]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0022 seconds. Added 3 classes and 2 folders.
-[2018.11.14-13.32.58:804][943]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.11.14-13.32.59:199][943]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 2576 classes and 607 folders.
-[2018.11.14-13.32.59:200][943]Display: HotReload took 32.0s.
-[2018.11.14-13.33.09:747][202]Candidate modules for hot reload:
-[2018.11.14-13.33.09:747][202]  RunAndGun
-[2018.11.14-13.33.09:747][202]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,696 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
-[2018.11.14-13.33.09:759][202]Warning: Starting HotReload took  0.0s.
-[2018.11.14-13.33.11:849][451]CompilerResultsLog: New page: Compilation - 14 Nov 2018 13:33:11
-[2018.11.14-13.33.11:849][451]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
-[2018.11.14-13.33.11:849][451]CompilerResultsLog: Compiling game modules for hot reload
-[2018.11.14-13.33.11:849][451]CompilerResultsLog: Target is up to date
-[2018.11.14-13.33.11:849][451]CompilerResultsLog: Total build time: 1.79 seconds (NoActionsToExecute executor: 0.00 seconds)
-[2018.11.14-13.33.11:849][451]LogMainFrame: MainFrame: Module compiling took 2.117 seconds
-[2018.11.14-13.33.12:183][451]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2576 classes and 607 folders.
-[2018.11.14-13.33.12:183][451]Display: HotReload took  2.5s.
+[2018.11.15-10.06.17:758][  0]LogInit: Selected Device Profile: [Windows]
+[2018.11.15-10.06.17:758][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.11.15-10.06.17:768][  0]LogHAL: Display: Platform has ~ 16 GB [17116667904 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.11.15-10.06.17:768][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2018.11.15-10.06.17:768][  0]LogInit: Going up to parent DeviceProfile []
+[2018.11.15-10.06.17:768][  0]LogInit: Computer: DESKTOP-C6U4EA4
+[2018.11.15-10.06.17:768][  0]LogInit: User: ThomasSimon
+[2018.11.15-10.06.17:768][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.11.15-10.06.17:768][  0]LogInit: High frequency timer resolution =3.234375 MHz
+[2018.11.15-10.06.17:768][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.11.15-10.06.17:768][  0]LogMemory: Platform Memory Stats for Windows
+[2018.11.15-10.06.17:768][  0]LogMemory: Process Physical Memory: 100.20 MB used, 100.20 MB peak
+[2018.11.15-10.06.17:768][  0]LogMemory: Process Virtual Memory: 84.24 MB used, 84.24 MB peak
+[2018.11.15-10.06.17:768][  0]LogMemory: Physical Memory: 4553.17 MB used,  11770.55 MB free, 16323.73 MB total
+[2018.11.15-10.06.17:768][  0]LogMemory: Virtual Memory: 4625.40 MB used,  11770.55 MB free, 134217728.00 MB total
+[2018.11.15-10.06.17:785][  0]LogInit: Using OS detected language (en-GB).
+[2018.11.15-10.06.17:785][  0]LogInit: Using OS detected locale (en-GB).
+[2018.11.15-10.06.17:786][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2018.11.15-10.06.18:135][  0]LogStreaming: Display: Took  0.350s to InitEngineTextLocalization.
+[2018.11.15-10.06.18:136][  0]LogInit: Setting process to per monitor DPI aware
+[2018.11.15-10.06.18:170][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.11.15-10.06.18:170][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.11.15-10.06.18:335][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.11.15-10.06.18:335][  0]LogD3D11RHI: D3D11 adapters:
+[2018.11.15-10.06.18:374][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.11.15-10.06.18:374][  0]LogD3D11RHI:       4043/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2018.11.15-10.06.18:376][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.11.15-10.06.18:376][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.11.15-10.06.18:376][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.11.15-10.06.18:380][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.11.15-10.06.18:381][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.11.15-10.06.18:381][  0]LogWindows: EnumDisplayDevices:
+[2018.11.15-10.06.18:381][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2018.11.15-10.06.18:381][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2018.11.15-10.06.18:381][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.11.15-10.06.18:381][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.11.15-10.06.18:382][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2018.11.15-10.06.18:382][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.11.15-10.06.18:382][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
+[2018.11.15-10.06.18:382][  0]LogD3D11RHI:      Driver Date: 6-1-2018
+[2018.11.15-10.06.18:382][  0]LogRHI: Texture pool is 2830 MB (70% of 4043 MB)
+[2018.11.15-10.06.18:411][  0]LogD3D11RHI: Async texture creation enabled
+[2018.11.15-10.06.18:429][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.11.15-10.06.18:483][  0]LogShaderCompilers: Guid format shader working directory is -6 characters bigger than the processId version (A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Intermediate/Shaders/WorkingDirectory/10584/).
+[2018.11.15-10.06.18:483][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Thomas Simon/AppData/Local/Temp/UnrealShaderWorkingDir/9BC153A74B9A0EB0CC2643961B0F57CD/'.
+[2018.11.15-10.06.18:736][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.11.15-10.06.18:747][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.11.15-10.06.18:759][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.11.15-10.06.18:771][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.11.15-10.06.18:784][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.11.15-10.06.18:795][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.11.15-10.06.18:808][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.11.15-10.06.18:821][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.11.15-10.06.18:827][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:899][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.11.15-10.06.18:901][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.11.15-10.06.18:958][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.11.15-10.06.18:958][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.11.15-10.06.18:980][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.11.15-10.06.18:980][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.11.15-10.06.18:991][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.11.15-10.06.19:003][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.11.15-10.06.19:015][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.11.15-10.06.19:027][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.11.15-10.06.19:035][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.11.15-10.06.19:035][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.11.15-10.06.19:090][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.11.15-10.06.19:090][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.11.15-10.06.19:091][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.11.15-10.06.19:764][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.11.15-10.06.19:812][  0]LogDerivedDataCache: Loaded boot cache 0.05s 71MB C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.11.15-10.06.19:812][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2018.11.15-10.06.19:813][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.11.15-10.06.19:813][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.11.15-10.06.19:813][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.11.15-10.06.19:813][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.11.15-10.06.19:825][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.11.15-10.06.19:838][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Thomas Simon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.11.15-10.06.19:838][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.11.15-10.06.19:838][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.11.15-10.06.19:858][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.11.15-10.06.19:859][  0]LogSlate: Using FreeType 2.6.0
+[2018.11.15-10.06.19:859][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.11.15-10.06.19:931][  0]LogAssetRegistry: FAssetRegistry took 0.0262 seconds to start up
+[2018.11.15-10.06.20:220][  0]LogInit: Selected Device Profile: [Windows]
+[2018.11.15-10.06.20:343][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.11.15-10.06.20:345][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.11.15-10.06.20:345][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.11.15-10.06.20:345][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.11.15-10.06.20:345][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.11.15-10.06.20:373][  0]LogNetVersion: RunAndGun 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2764751435)
+[2018.11.15-10.06.20:900][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.145105 seconds
+[2018.11.15-10.06.20:906][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2018.11.15-10.06.20:907][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
+[2018.11.15-10.06.20:907][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.11.15-10.06.21:690][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.11.15-10.06.21:703][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.11.15-10.06.21:893][  0]SourceControl: Source control is disabled
+[2018.11.15-10.06.21:893][  0]SourceControl: Source control is disabled
+[2018.11.15-10.06.21:895][  0]SourceControl: Source control is disabled
+[2018.11.15-10.06.21:896][  0]SourceControl: Source control is disabled
+[2018.11.15-10.06.22:068][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.11.15-10.06.22:113][  0]LogOcInput: OculusInput pre-init called
+[2018.11.15-10.06.22:167][  0]LogEngine: Initializing Engine...
+[2018.11.15-10.06.22:168][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.11.15-10.06.22:170][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.11.15-10.06.22:170][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.11.15-10.06.22:170][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.11.15-10.06.22:170][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.11.15-10.06.22:359][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.11.15-10.06.22:371][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.11.15-10.06.22:392][  0]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.06.22:407][  0]LogInit: FAudioDevice initialized.
+[2018.11.15-10.06.22:407][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.11.15-10.06.22:479][  0]LogDerivedDataCache: Saved boot cache 0.07s 71MB C:/Users/Thomas Simon/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2018.11.15-10.06.22:489][  0]LogInit: Texture streaming: Enabled
+[2018.11.15-10.06.22:505][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.11.15-10.06.22:516][  0]LogInit: Transaction tracking system initialized
+[2018.11.15-10.06.22:538][  0]BlueprintLog: New page: Editor Load
+[2018.11.15-10.06.22:607][  0]LocalizationService: Localization service is disabled
+[2018.11.15-10.06.22:853][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.11.15-10.06.22:853][  0]LogCook: Display: Mobile HDR setting 1
+[2018.11.15-10.06.22:853][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.11.15-10.06.22:853][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.11.15-10.06.22:853][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.11.15-10.06.22:853][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.11.15-10.06.22:853][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.11.15-10.06.22:955][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/' took 0.01s
+[2018.11.15-10.06.22:955][  0]SourceControl: Source control is disabled
+[2018.11.15-10.06.23:059][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.11.15-10.06.23:060][  0]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.11.15-10.06.47:590][  0]LogSlate: Window 'Restore Packages' being destroyed
+[2018.11.15-10.06.47:591][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.11.15-10.06.47:594][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.11.15-10.06.47:611][  0]Cmd: MAP LOAD FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.11.15-10.06.47:611][  0]LightingResults: New page: Lighting Build
+[2018.11.15-10.06.47:615][  0]MapCheck: New page: Map Check
+[2018.11.15-10.06.47:615][  0]LightingResults: New page: Lighting Build
+[2018.11.15-10.06.47:833][  0]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.06.47:838][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.11.15-10.06.47:862][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.11.15-10.06.47:926][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 64.513ms to complete.
+[2018.11.15-10.06.47:927][  0]LogFileHelpers: Loading map 'Main' took 0.316
+[2018.11.15-10.06.48:081][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.06.48:088][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.06.48:096][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.06.48:104][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.06.48:113][  0]LogCollectionManager: Loaded 0 collections in 0.001358 seconds
+[2018.11.15-10.06.48:179][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Collections/' took 0.01s
+[2018.11.15-10.06.48:179][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/Developers/ThomasSimon/Collections/' took 0.01s
+[2018.11.15-10.06.48:179][  0]LogFileCache: Scanning file cache for directory 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/Collections/' took 0.01s
+[2018.11.15-10.06.48:179][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.11.15-10.06.48:190][  0]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.06.48:211][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.11.15-10.06.48:401][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.11.15-10.06.49:651][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.11.15-10.06.49:682][  0]LogSlate: Took 0.000228 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.11.15-10.06.49:694][  0]LogSlate: Took 0.007127 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.11.15-10.06.49:751][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.RunAndGun
+[2018.11.15-10.06.49:751][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2018.11.15-10.06.49:751][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.20
+[2018.11.15-10.06.49:751][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2018.11.15-10.06.49:751][  0]LogTemp: BranchPath = DESKTOP-C6U4EA4/C/Program Files/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = DESKTOP-C6U4EA4/C/Program Files/Epic Games/UE_4.20/Engine/Binaries
+[2018.11.15-10.06.49:751][  0]LogRenderer: Reallocating scene render targets to support 1152x600 Format 10 NumSamples 1 (Frame:1).
+[2018.11.15-10.06.49:866][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Thomas Simon\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.11.15-10.06.49:881][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2018.11.15-10.06.49:881][  0]LogLoad: (Engine Initialization) Total time: 33.61 seconds
+[2018.11.15-10.06.49:881][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.11.15-10.06.49:922][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.11.15-10.06.50:019][  0]LogSlate: Took 0.003659 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.11.15-10.06.50:074][  1]LogAssetRegistry: Asset discovery search completed in 30.1662 seconds
+[2018.11.15-10.06.50:076][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.11.15-10.06.50:076][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000072 seconds (updated 0 objects)
+[2018.11.15-10.06.50:910][ 96]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.11.15-10.06.53:884][453]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.06.54:443][520]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.06.54:455][520]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.06.54:470][520]PIE: New page: PIE session: Main (15 Nov 2018 10:06:54)
+[2018.11.15-10.06.54:471][520]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.06.54:475][520]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004636s)
+[2018.11.15-10.06.54:476][520]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.06.54:476][520]LogPlayLevel: PIE: World Init took: (0.000616s)
+[2018.11.15-10.06.54:476][520]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005388s)
+[2018.11.15-10.06.54:506][520]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.06.54:518][520]LogInit: FAudioDevice initialized.
+[2018.11.15-10.06.54:880][520]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.06.54:883][520]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.06.54
+[2018.11.15-10.06.54:883][520]LogWorld: Bringing up level for play took: 0.000685
+[2018.11.15-10.06.54:911][520]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
+[2018.11.15-10.06.54:917][520]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.542
+[2018.11.15-10.07.01:465][298]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.07.01:500][298]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.07.01:522][298]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.07.01:571][302]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2018.11.15-10.07.03:414][523]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.07.03:535][534]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_PlayerCharacter.Bp_PlayerCharacter
+[2018.11.15-10.07.04:005][534]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 116 classes and 0 folders.
+[2018.11.15-10.07.04:735][534]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_RunAndGunGameModeBase.Bp_RunAndGunGameModeBase
+[2018.11.15-10.07.07:785][847]LogSlate: Window 'Bp_PlayerCharacter' being destroyed
+[2018.11.15-10.07.15:047][408]LogSlate: Window 'Delete Assets' being destroyed
+[2018.11.15-10.07.20:344][ 42]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.11.15-10.07.20:355][ 42]Candidate modules for hot reload:
+[2018.11.15-10.07.20:355][ 42]  RunAndGun
+[2018.11.15-10.07.20:355][ 42]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,1390 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.07.20:357][ 42]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:07:29
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Creating makefile for hot reloading RunAndGunEditor (ini files are newer than UBTMakefile)
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Target is up to date
+[2018.11.15-10.07.29:309][115]CompilerResultsLog: Total build time: 8.64 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.11.15-10.07.29:309][115]LogMainFrame: MainFrame: Module compiling took 8.965 seconds
+[2018.11.15-10.07.29:583][115]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.07.29:585][115]Display: HotReload took  9.2s.
+[2018.11.15-10.07.34:827][743]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.07.34:894][751]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.07.34:911][751]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.07.34:912][751]PIE: New page: PIE session: Main (15 Nov 2018 10:07:34)
+[2018.11.15-10.07.34:912][751]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.07.34:916][751]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004111s)
+[2018.11.15-10.07.34:916][751]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.07.34:917][751]LogPlayLevel: PIE: World Init took: (0.000848s)
+[2018.11.15-10.07.34:917][751]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005112s)
+[2018.11.15-10.07.34:968][751]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.07.34:977][751]LogInit: FAudioDevice initialized.
+[2018.11.15-10.07.35:012][751]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.07.35:013][751]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.07.35
+[2018.11.15-10.07.35:013][751]LogWorld: Bringing up level for play took: 0.000643
+[2018.11.15-10.07.35:026][751]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.65
+[2018.11.15-10.07.36:792][961]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.07.36:829][961]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.07.36:862][961]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.07.36:894][964]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2018.11.15-10.07.48:556][303]Cmd: EDIT COPY
+[2018.11.15-10.07.48:789][330]Cmd: EDIT PASTE
+[2018.11.15-10.07.51:643][659]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.08.32:841][531]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.09.05:134][343]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.09.15:139][529]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.09.15:222][539]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.09.15:239][539]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.09.15:239][539]PIE: New page: PIE session: Main (15 Nov 2018 10:09:15)
+[2018.11.15-10.09.15:239][539]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.09.15:244][539]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004326s)
+[2018.11.15-10.09.15:244][539]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.09.15:245][539]LogPlayLevel: PIE: World Init took: (0.000753s)
+[2018.11.15-10.09.15:245][539]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005206s)
+[2018.11.15-10.09.15:284][539]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.09.15:293][539]LogInit: FAudioDevice initialized.
+[2018.11.15-10.09.15:326][539]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.09.15:327][539]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.09.15
+[2018.11.15-10.09.15:328][539]LogWorld: Bringing up level for play took: 0.000742
+[2018.11.15-10.09.15:341][539]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.965
+[2018.11.15-10.09.19:972][ 92]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.09.20:007][ 92]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.09.20:039][ 92]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.09.20:077][ 96]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2018.11.15-10.09.25:146][696]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.09.25:245][708]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.09.25:262][708]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.09.25:262][708]PIE: New page: PIE session: Main (15 Nov 2018 10:09:25)
+[2018.11.15-10.09.25:262][708]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.09.25:266][708]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004147s)
+[2018.11.15-10.09.25:267][708]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.09.25:267][708]LogPlayLevel: PIE: World Init took: (0.000720s)
+[2018.11.15-10.09.25:267][708]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004995s)
+[2018.11.15-10.09.25:305][708]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.09.25:315][708]LogInit: FAudioDevice initialized.
+[2018.11.15-10.09.25:349][708]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.09.25:351][708]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.09.25
+[2018.11.15-10.09.25:351][708]LogWorld: Bringing up level for play took: 0.000797
+[2018.11.15-10.09.25:365][708]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.989
+[2018.11.15-10.09.27:523][965]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.09.27:554][965]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.09.27:586][965]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.09.27:629][970]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2018.11.15-10.09.49:311][445]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.15-10.09.52:407][810]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2018.11.15-10.09.53:274][909]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2018.11.15-10.09.56:233][260]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.11.15-10.09.59:671][662]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2018.11.15-10.10.08:421][695]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.10.15:476][532]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.10.16:078][603]LogEditorActor: Deleted Actor: SphereReflectionCapture
+[2018.11.15-10.10.16:111][603]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2018.11.15-10.10.17:271][742]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.15-10.10.17:883][811]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2018.11.15-10.10.22:076][308]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (Atmospheric Fog)
+[2018.11.15-10.10.24:033][536]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2018.11.15-10.10.38:489][215]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.10.46:006][ 95]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.10.46:089][105]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.10.46:107][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.10.46:107][105]PIE: New page: PIE session: Main (15 Nov 2018 10:10:46)
+[2018.11.15-10.10.46:107][105]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.10.46:111][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004060s)
+[2018.11.15-10.10.46:112][105]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.10.46:112][105]LogPlayLevel: PIE: World Init took: (0.000663s)
+[2018.11.15-10.10.46:112][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004843s)
+[2018.11.15-10.10.46:151][105]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.10.46:161][105]LogInit: FAudioDevice initialized.
+[2018.11.15-10.10.46:191][105]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.10.46:192][105]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.10.46
+[2018.11.15-10.10.46:192][105]LogWorld: Bringing up level for play took: 0.000663
+[2018.11.15-10.10.46:206][105]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.17
+[2018.11.15-10.10.49:630][513]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.10.49:664][513]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.10.49:696][513]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.10.49:733][516]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2018.11.15-10.11.15:676][480]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.11.27:225][845]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.11.27:309][855]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.11.27:326][855]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.11.27:326][855]PIE: New page: PIE session: Main (15 Nov 2018 10:11:27)
+[2018.11.15-10.11.27:326][855]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.11.27:330][855]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003662s)
+[2018.11.15-10.11.27:330][855]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.11.27:330][855]LogPlayLevel: PIE: World Init took: (0.000620s)
+[2018.11.15-10.11.27:330][855]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004401s)
+[2018.11.15-10.11.27:369][855]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.11.27:379][855]LogInit: FAudioDevice initialized.
+[2018.11.15-10.11.27:412][855]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.11.27:413][855]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.11.27
+[2018.11.15-10.11.27:414][855]LogWorld: Bringing up level for play took: 0.000810
+[2018.11.15-10.11.27:426][855]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 1.051
+[2018.11.15-10.11.33:358][564]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.11.33:393][564]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.11.33:426][564]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.11.33:462][567]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2018.11.15-10.11.37:929][ 94]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.12.09:013][673]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.12.09:087][682]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.12.09:104][682]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.12.09:104][682]PIE: New page: PIE session: Main (15 Nov 2018 10:12:09)
+[2018.11.15-10.12.09:104][682]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.12.09:108][682]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003956s)
+[2018.11.15-10.12.09:109][682]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.12.09:109][682]LogPlayLevel: PIE: World Init took: (0.000699s)
+[2018.11.15-10.12.09:109][682]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004778s)
+[2018.11.15-10.12.09:145][682]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.12.09:155][682]LogInit: FAudioDevice initialized.
+[2018.11.15-10.12.09:184][682]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.12.09:185][682]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.12.09
+[2018.11.15-10.12.09:186][682]LogWorld: Bringing up level for play took: 0.000895
+[2018.11.15-10.12.09:200][682]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.824
+[2018.11.15-10.12.22:999][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.12.23:035][335]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.12.23:068][335]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.12.23:105][338]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2018.11.15-10.12.32:387][426]Cmd: EDIT COPY
+[2018.11.15-10.12.32:639][456]Cmd: EDIT PASTE
+[2018.11.15-10.13.07:494][406]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.13.27:470][768]Cmd: SELECT NONE
+[2018.11.15-10.13.31:924][282]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.13.32:007][292]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.13.32:026][292]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.13.32:026][292]PIE: New page: PIE session: Main (15 Nov 2018 10:13:32)
+[2018.11.15-10.13.32:026][292]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.13.32:030][292]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004024s)
+[2018.11.15-10.13.32:030][292]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.13.32:031][292]LogPlayLevel: PIE: World Init took: (0.000648s)
+[2018.11.15-10.13.32:031][292]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.004806s)
+[2018.11.15-10.13.32:069][292]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.13.32:079][292]LogInit: FAudioDevice initialized.
+[2018.11.15-10.13.32:112][292]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.13.32:113][292]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.13.32
+[2018.11.15-10.13.32:113][292]LogWorld: Bringing up level for play took: 0.000734
+[2018.11.15-10.13.32:127][292]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.248
+[2018.11.15-10.13.40:018][236]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.13.40:054][236]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.13.40:087][236]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.13.40:123][239]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2018.11.15-10.13.44:973][817]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.13.45:066][828]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.13.45:082][828]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.13.45:082][828]PIE: New page: PIE session: Main (15 Nov 2018 10:13:45)
+[2018.11.15-10.13.45:082][828]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.13.45:087][828]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004731s)
+[2018.11.15-10.13.45:087][828]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.13.45:088][828]LogPlayLevel: PIE: World Init took: (0.000644s)
+[2018.11.15-10.13.45:088][828]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005508s)
+[2018.11.15-10.13.45:124][828]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.13.45:134][828]LogInit: FAudioDevice initialized.
+[2018.11.15-10.13.45:161][828]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.13.45:163][828]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.13.45
+[2018.11.15-10.13.45:163][828]LogWorld: Bringing up level for play took: 0.000687
+[2018.11.15-10.13.45:176][828]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.801
+[2018.11.15-10.14.02:225][867]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.14.02:256][867]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.14.02:288][867]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.14.02:325][870]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2018.11.15-10.14.09:222][688]Cmd: EDIT COPY
+[2018.11.15-10.14.09:508][722]Cmd: EDIT PASTE
+[2018.11.15-10.14.45:259][879]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.11.15-10.14.47:538][152]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.14.47:554][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.14.47:554][152]PIE: New page: PIE session: Main (15 Nov 2018 10:14:47)
+[2018.11.15-10.14.47:554][152]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.14.47:559][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004782s)
+[2018.11.15-10.14.47:560][152]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.14.47:560][152]LogPlayLevel: PIE: World Init took: (0.000857s)
+[2018.11.15-10.14.47:560][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005771s)
+[2018.11.15-10.14.47:597][152]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.14.47:607][152]LogInit: FAudioDevice initialized.
+[2018.11.15-10.14.47:637][152]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.14.47:638][152]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.14.47
+[2018.11.15-10.14.47:639][152]LogWorld: Bringing up level for play took: 0.000794
+[2018.11.15-10.14.47:652][152]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.723
+[2018.11.15-10.15.06:413][400]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.15.06:446][400]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.15.06:479][400]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.15.06:518][402]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2018.11.15-10.15.13:390][209]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.15.15:225][420]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_PlayerCharacter.Bp_PlayerCharacter
+[2018.11.15-10.15.15:574][420]LogSlate: Took 0.005907 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.11.15-10.15.18:413][752]LogSlate: Window 'Bp_PlayerCharacter' being destroyed
+[2018.11.15-10.15.19:184][840]LogRenderer: Reallocating scene render targets to support 1152x900 Format 10 NumSamples 1 (Frame:1).
+[2018.11.15-10.15.22:454][229]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.11.15-10.15.22:663][229]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main43A92A8D424143B67E48B3936B5A6F5B.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
+[2018.11.15-10.15.22:704][229]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main_BuiltData" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset" SILENT=true
+[2018.11.15-10.15.22:730][229]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main_BuiltData3B8F413F4225774BCD412C972F9829A8.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset'
+[2018.11.15-10.15.23:603][333]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.15.23:687][343]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.11.15-10.15.23:700][343]Candidate modules for hot reload:
+[2018.11.15-10.15.23:701][343]  RunAndGun
+[2018.11.15-10.15.23:701][343]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,2409 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.15.23:703][343]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.15.25:592][570]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:15:25
+[2018.11.15-10.15.25:592][570]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.15.25:592][570]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.15.25:592][570]CompilerResultsLog: Target is up to date
+[2018.11.15-10.15.25:592][570]CompilerResultsLog: Total build time: 1.59 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.11.15-10.15.25:592][570]LogMainFrame: MainFrame: Module compiling took 1.905 seconds
+[2018.11.15-10.15.25:870][570]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.15.25:870][570]Display: HotReload took  2.2s.
+[2018.11.15-10.15.30:800][159]LogAssetEditorManager: Opening Asset editor for Class /Script/RunAndGun.PlayerCharacter
+[2018.11.15-10.16.23:129][320]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.16.23:303][320]Candidate modules for hot reload:
+[2018.11.15-10.16.23:303][320]  RunAndGun
+[2018.11.15-10.16.23:303][320]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,6578 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.16.23:306][320]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.16.25:532][568]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:16:25
+[2018.11.15-10.16.25:532][568]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.16.25:532][568]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.16.25:532][568]CompilerResultsLog: Target is up to date
+[2018.11.15-10.16.25:532][568]CompilerResultsLog: Total build time: 1.88 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.11.15-10.16.25:532][568]LogMainFrame: MainFrame: Module compiling took 2.242 seconds
+[2018.11.15-10.16.25:822][568]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.16.25:822][568]Display: HotReload took  2.6s.
+[2018.11.15-10.24.05:276][112]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.24.05:534][112]Candidate modules for hot reload:
+[2018.11.15-10.24.05:534][112]  RunAndGun
+[2018.11.15-10.24.05:534][112]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,3644 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.24.05:537][112]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:25:41
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.3538485 seconds
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Building 5 actions with 4 processes...
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   [1/5] RunAndGun.init.gen.cpp
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   [2/5] PlayerCharacter.gen.cpp
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   [3/5] PlayerCharacter.cpp
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   [4/5] UE4Editor-RunAndGun-3644.lib
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3644.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3644.exp
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:   [5/5] UE4Editor-RunAndGun-3644.dll
+[2018.11.15-10.25.41:141][611]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3644.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3644.suppressed.exp
+[2018.11.15-10.25.41:141][611]CompilerResultsLog: Total build time: 95.03 seconds (Parallel executor: 82.90 seconds)
+[2018.11.15-10.25.41:141][611]LogMainFrame: MainFrame: Module compiling took 95.625 seconds
+[2018.11.15-10.25.41:239][611]LogClass: Could not find existing class PlayerCharacter in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.15-10.25.41:254][611]LogHotReload: Re-instancing PlayerCharacter after hot-reload.
+[2018.11.15-10.25.41:689][611]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0004 seconds. Added 3 classes and 2 folders.
+[2018.11.15-10.25.41:694][611]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.25.42:122][611]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.25.42:122][611]Display: HotReload took 96.6s.
+[2018.11.15-10.25.51:327][292]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.11.15-10.25.56:132][473]BlueprintLog: New page: Compile Bp_PlayerCharacter
+[2018.11.15-10.25.57:031][534]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_PlayerCharacterB13C4C924B97F6430678CABA8E73B129.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_PlayerCharacter.uasset'
+[2018.11.15-10.25.58:648][726]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.15-10.25.59:679][845]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.25.59:763][855]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.25.59:783][855]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.25.59:784][855]PIE: New page: PIE session: Main (15 Nov 2018 10:25:59)
+[2018.11.15-10.25.59:784][855]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.25.59:789][855]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004740s)
+[2018.11.15-10.25.59:789][855]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.25.59:789][855]LogPlayLevel: PIE: World Init took: (0.000791s)
+[2018.11.15-10.25.59:789][855]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005657s)
+[2018.11.15-10.25.59:842][855]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.25.59:853][855]LogInit: FAudioDevice initialized.
+[2018.11.15-10.25.59:884][855]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.25.59:885][855]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.25.59
+[2018.11.15-10.25.59:885][855]LogWorld: Bringing up level for play took: 0.000750
+[2018.11.15-10.25.59:898][855]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.477
+[2018.11.15-10.26.08:203][848]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.26.08:234][848]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.26.08:270][848]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.26.08:312][850]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2018.11.15-10.26.08:709][895]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.26.13:177][428]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.11.15-10.26.22:740][540]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_Projectile.Bp_Projectile
+[2018.11.15-10.26.24:907][751]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/MyContent/Blueprints/Bp_Projectile.Bp_Projectile
+[2018.11.15-10.26.29:540][268]LogSlate: Took 0.006009 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.11.15-10.31.07:107][925]Candidate modules for hot reload:
+[2018.11.15-10.31.07:107][925]  RunAndGun
+[2018.11.15-10.31.07:107][925]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,6474 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.31.07:115][925]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:31:28
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.5417219 seconds
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Building 6 actions with 4 processes...
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [1/6] RunAndGun.init.gen.cpp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [2/6] Projectile.gen.cpp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [3/6] PlayerCharacter.cpp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [4/6] Projectile.cpp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [5/6] UE4Editor-RunAndGun-6474.lib
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-6474.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-6474.exp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:   [6/6] UE4Editor-RunAndGun-6474.dll
+[2018.11.15-10.31.28:993][517]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-6474.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-6474.suppressed.exp
+[2018.11.15-10.31.28:993][517]CompilerResultsLog: Total build time: 21.57 seconds (Parallel executor: 9.17 seconds)
+[2018.11.15-10.31.28:994][517]LogMainFrame: MainFrame: Module compiling took 21.910 seconds
+[2018.11.15-10.31.29:051][517]LogClass: Could not find existing class Projectile in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.15-10.31.29:051][517]LogClass: Function OnHit is new.
+[2018.11.15-10.31.29:976][517]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.923 s
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: === Handled ensure: ===
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: 
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: Ensure condition failed: InParent != this [File:D:\Build\++UE4\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 1680]
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: Cannot attach a component to itself.
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: Stack: 
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5dd771f6 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5dab0c92 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5dacb356 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5b30080a UE4Editor-Engine.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff98854015 UE4Editor-RunAndGun-6474.dll!AProjectile::AProjectile() [a:\projects\unreal engine projects\realtwoatonce\runandgun\source\runandgun\projectile.cpp:20]
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5e39aafd UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5e67dcf8 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5e65da9f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5e3a0a57 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5d9be08e UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5db77851 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5db76b49 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff48b60673 UE4Editor-HotReload.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff48b5e067 UE4Editor-HotReload.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff48b5e9f7 UE4Editor-HotReload.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff48b72d94 UE4Editor-HotReload.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007fff5d9447b2 UE4Editor-Core.dll!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007ff6dcd08269 UE4Editor.exe!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007ff6dcd15b3c UE4Editor.exe!UnknownFunction []
+[2018.11.15-10.31.29:976][517]LogOutputDevice: Error: [Callstack] 0x00007ff6dcd15bba UE4Editor.exe!UnknownFunction []
+[2018.11.15-10.31.29:977][517]LogOutputDevice: Error: [Callstack] 0x00007ff6dcd23dac UE4Editor.exe!UnknownFunction []
+[2018.11.15-10.31.29:977][517]LogOutputDevice: Error: [Callstack] 0x00007ff6dcd25aaa UE4Editor.exe!UnknownFunction []
+[2018.11.15-10.31.29:977][517]LogOutputDevice: Error: [Callstack] 0x00007fffab5e3034 KERNEL32.DLL!UnknownFunction []
+[2018.11.15-10.31.29:977][517]LogOutputDevice: Error: [Callstack] 0x00007fffacce1471 ntdll.dll!UnknownFunction []
+[2018.11.15-10.31.29:977][517]LogOutputDevice: Error: 
+[2018.11.15-10.31.29:985][517]LogStats:                SubmitErrorReport -  0.000 s
+[2018.11.15-10.31.31:191][517]LogStats:                    SendNewReport -  1.206 s
+[2018.11.15-10.31.31:191][517]LogStats:             FDebug::EnsureFailed -  2.138 s
+[2018.11.15-10.31.31:202][517]LogHotReload: Re-instancing Projectile after hot-reload.
+[2018.11.15-10.31.31:713][517]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 3 classes and 2 folders.
+[2018.11.15-10.31.31:718][517]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.31.32:070][517]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2576 classes and 607 folders.
+[2018.11.15-10.31.32:070][517]Display: HotReload took 25.0s.
+[2018.11.15-10.31.53:181][  0]LogEditorTransaction: Undo Modify Component(s)
+[2018.11.15-10.31.54:568][163]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.31.57:553][511]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.03:013][145]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.17:354][859]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.17:438][869]BlueprintLog: New page: Compile Bp_Projectile
+[2018.11.15-10.32.18:168][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Blueprints/Bp_Projectile" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_Projectile.uasset" SILENT=true
+[2018.11.15-10.32.18:187][920]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_Projectile11FDB57145FA144DDF995D83973709EC.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_Projectile.uasset'
+[2018.11.15-10.32.23:468][512]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.31:777][472]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.31:860][482]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.32.31:882][482]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.32.31:883][482]PIE: New page: PIE session: Main (15 Nov 2018 10:32:31)
+[2018.11.15-10.32.31:883][482]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.32.31:887][482]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004772s)
+[2018.11.15-10.32.31:888][482]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.32.31:888][482]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2018.11.15-10.32.31:888][482]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005627s)
+[2018.11.15-10.32.31:936][482]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.32.31:946][482]LogInit: FAudioDevice initialized.
+[2018.11.15-10.32.31:980][482]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.32.31:981][482]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.32.31
+[2018.11.15-10.32.31:982][482]LogWorld: Bringing up level for play took: 0.001028
+[2018.11.15-10.32.31:996][482]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.379
+[2018.11.15-10.32.34:735][808]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.32.34:770][808]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.32.34:811][808]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.32.34:853][810]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2018.11.15-10.32.36:288][982]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.15-10.32.37:517][125]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.15-10.32.38:157][200]LogEditorViewport: Clicking on Actor (LMB): Bp_Projectile_C (Bp_Projectile)
+[2018.11.15-10.32.40:740][502]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.32.40:833][513]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.32.40:853][513]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.32.40:853][513]PIE: New page: PIE session: Main (15 Nov 2018 10:32:40)
+[2018.11.15-10.32.40:853][513]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.32.40:858][513]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004914s)
+[2018.11.15-10.32.40:859][513]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.32.40:859][513]LogPlayLevel: PIE: World Init took: (0.000652s)
+[2018.11.15-10.32.40:859][513]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005684s)
+[2018.11.15-10.32.40:904][513]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.32.40:916][513]LogInit: FAudioDevice initialized.
+[2018.11.15-10.32.40:950][513]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.32.40:951][513]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.32.40
+[2018.11.15-10.32.40:952][513]LogWorld: Bringing up level for play took: 0.000984
+[2018.11.15-10.32.40:965][513]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.589
+[2018.11.15-10.32.43:965][870]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.32.44:002][870]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.32.44:041][870]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.32.44:064][871]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2018.11.15-10.32.45:259][ 13]LogEditorViewport: Clicking on Actor (LMB): Bp_Projectile_C (Bp_Projectile)
+[2018.11.15-10.32.46:675][164]Cmd: SELECT NONE
+[2018.11.15-10.32.51:840][763]LogEditorViewport: Clicking on Actor (LMB): Bp_Projectile_C (Bp_Projectile)
+[2018.11.15-10.32.52:828][875]Cmd: DELETE
+[2018.11.15-10.32.52:828][875]Cmd: ACTOR DELETE
+[2018.11.15-10.32.52:832][875]LogEditorActor: Deleted Actor: Bp_Projectile_C
+[2018.11.15-10.32.52:871][875]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2018.11.15-10.32.53:654][969]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.33.01:487][890]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.33.46:427][263]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.33.59:327][786]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.34.15:914][754]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.34.30:749][514]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.34.38:103][393]BlueprintLog: New page: Compile Bp_Projectile
+[2018.11.15-10.34.39:084][477]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Blueprints/Bp_Projectile" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_Projectile.uasset" SILENT=true
+[2018.11.15-10.34.39:101][477]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Bp_Projectile6F4B4E67422F9E0700ECB8AD40EDA3FC.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Blueprints/Bp_Projectile.uasset'
+[2018.11.15-10.34.44:288][ 96]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.11.15-10.34.44:362][ 96]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/MainA5E1582A42F3293DD4F5B3A3AAEA416B.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
+[2018.11.15-10.34.44:388][ 96]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main_BuiltData" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset" SILENT=true
+[2018.11.15-10.34.44:401][ 96]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/Main_BuiltData2329156440EF9EAB44FD16A1586EE022.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main_BuiltData.uasset'
+[2018.11.15-10.34.45:343][207]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.34.45:368][207]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.34.45:368][207]PIE: New page: PIE session: Main (15 Nov 2018 10:34:45)
+[2018.11.15-10.34.45:368][207]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.34.45:373][207]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004403s)
+[2018.11.15-10.34.45:373][207]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.34.45:373][207]LogPlayLevel: PIE: World Init took: (0.000670s)
+[2018.11.15-10.34.45:374][207]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005441s)
+[2018.11.15-10.34.45:419][207]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.34.45:431][207]LogInit: FAudioDevice initialized.
+[2018.11.15-10.34.45:462][207]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.34.45:463][207]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.34.45
+[2018.11.15-10.34.45:464][207]LogWorld: Bringing up level for play took: 0.000809
+[2018.11.15-10.34.45:476][207]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 1.101
+[2018.11.15-10.34.49:253][657]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.34.49:289][657]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.34.49:327][657]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.34.49:358][659]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2018.11.15-10.34.50:468][792]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.37.22:890][583]Running C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -invalidatemakefilesonly
+[2018.11.15-10.37.23:707][583]Invalidating makefiles only in this run.
+[2018.11.15-10.37.23:852][583]Candidate modules for hot reload:
+[2018.11.15-10.37.23:852][583]  RunAndGun
+[2018.11.15-10.37.23:852][583]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,3957 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:37:41
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Creating makefile for hot reloading RunAndGunEditor (no existing makefile)
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 9.500224 seconds
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Building 5 actions with 4 processes...
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   [1/5] RunAndGun.init.gen.cpp
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   [2/5] MovingPlatform.cpp
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   [3/5] MovingPlatform.gen.cpp
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   [4/5] UE4Editor-RunAndGun-3957.lib
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3957.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3957.exp
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:   [5/5] UE4Editor-RunAndGun-3957.dll
+[2018.11.15-10.37.41:221][583]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3957.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-3957.suppressed.exp
+[2018.11.15-10.37.41:221][583]CompilerResultsLog: Total build time: 17.09 seconds (Parallel executor: 2.45 seconds)
+[2018.11.15-10.37.41:221][583]LogMainFrame: MainFrame: Module compiling took 17.384 seconds
+[2018.11.15-10.37.41:276][583]LogClass: Could not find existing class MovingPlatform in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.15-10.37.41:288][583]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.37.41:293][583]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.37.41:658][583]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.37.41:659][583]Display: HotReload took 17.8s.
+[2018.11.15-10.37.41:660][583]Warning: HotReload operation took 17.8s.
+[2018.11.15-10.37.41:821][583]LogVSAccessor: Warning: Couldn't goto line number '1' in 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Source/RunAndGun/MovingPlatform.h'
+[2018.11.15-10.37.42:385][583]LogVSAccessor: Warning: Couldn't goto line number '1' in 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Source/RunAndGun/MovingPlatform.cpp'
+[2018.11.15-10.37.42:398][583]LogSlate: Window 'Add C++ Class' being destroyed
+[2018.11.15-10.37.42:403][583]LogHotReload: New module detected: UE4Editor-RunAndGun-3957.dll
+[2018.11.15-10.37.42:439][584]LogHotReload: Starting Hot-Reload from IDE
+[2018.11.15-10.37.42:542][584]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.37.42:548][584]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.37.42:852][584]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.37.42:866][584]Display: HotReload took  0.4s.
+[2018.11.15-10.38.12:764][192]Candidate modules for hot reload:
+[2018.11.15-10.38.12:764][192]  RunAndGun
+[2018.11.15-10.38.12:764][192]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,9921 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.38.12:771][192]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.38.17:517][743]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:38:17
+[2018.11.15-10.38.17:517][743]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.38.17:517][743]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.38.17:517][743]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.15-10.38.17:517][743]CompilerResultsLog:   [1/3] PlayerCharacter.cpp
+[2018.11.15-10.38.17:517][743]CompilerResultsLog:   [2/3] UE4Editor-RunAndGun-9921.lib
+[2018.11.15-10.38.17:517][743]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9921.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9921.exp
+[2018.11.15-10.38.17:517][743]CompilerResultsLog:   [3/3] UE4Editor-RunAndGun-9921.dll
+[2018.11.15-10.38.17:517][743]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9921.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-9921.suppressed.exp
+[2018.11.15-10.38.17:517][743]CompilerResultsLog: Total build time: 4.35 seconds (Parallel executor: 2.72 seconds)
+[2018.11.15-10.38.17:517][743]LogMainFrame: MainFrame: Module compiling took 4.769 seconds
+[2018.11.15-10.38.17:612][743]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.38.17:617][743]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.38.17:969][743]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.38.17:969][743]Display: HotReload took  5.2s.
+[2018.11.15-10.38.20:998][105]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.38.21:025][105]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.38.21:026][105]PIE: New page: PIE session: Main (15 Nov 2018 10:38:21)
+[2018.11.15-10.38.21:026][105]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.38.21:031][105]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004741s)
+[2018.11.15-10.38.21:031][105]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.38.21:031][105]LogPlayLevel: PIE: World Init took: (0.000714s)
+[2018.11.15-10.38.21:031][105]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005670s)
+[2018.11.15-10.38.21:106][105]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.38.21:118][105]LogInit: FAudioDevice initialized.
+[2018.11.15-10.38.21:147][105]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.38.21:149][105]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.38.21
+[2018.11.15-10.38.21:149][105]LogWorld: Bringing up level for play took: 0.000901
+[2018.11.15-10.38.21:163][105]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main 0.787
+[2018.11.15-10.38.29:471][ 98]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.38.29:509][ 98]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.38.29:548][ 98]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.38.29:585][ 99]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2018.11.15-10.40.43:343][887]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.40.43:497][892]Candidate modules for hot reload:
+[2018.11.15-10.40.43:497][892]  RunAndGun
+[2018.11.15-10.40.43:498][892]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,7188 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.40.43:505][892]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:41:06
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 10.8870764 seconds
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Building 4 actions with 4 processes...
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:   [1/4] PlayerCharacter.gen.cpp
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:   [2/4] PlayerCharacter.cpp
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:   [3/4] UE4Editor-RunAndGun-7188.lib
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-7188.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-7188.exp
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:   [4/4] UE4Editor-RunAndGun-7188.dll
+[2018.11.15-10.41.06:686][662]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-7188.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-7188.suppressed.exp
+[2018.11.15-10.41.06:686][662]CompilerResultsLog: Total build time: 22.81 seconds (Parallel executor: 9.92 seconds)
+[2018.11.15-10.41.06:686][662]LogMainFrame: MainFrame: Module compiling took 23.218 seconds
+[2018.11.15-10.41.06:746][662]LogClass: Could not find existing class PlayerCharacter in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.15-10.41.06:760][662]LogHotReload: Re-instancing PlayerCharacter after hot-reload.
+[2018.11.15-10.41.07:155][662]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.41.07:162][662]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.41.07:520][662]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.41.07:520][662]Display: HotReload took 24.1s.
+[2018.11.15-10.41.12:078][208]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.41.12:107][208]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.41.12:107][208]PIE: New page: PIE session: Main (15 Nov 2018 10:41:12)
+[2018.11.15-10.41.12:107][208]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.41.12:112][208]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005095s)
+[2018.11.15-10.41.12:113][208]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.41.12:113][208]LogPlayLevel: PIE: World Init took: (0.000701s)
+[2018.11.15-10.41.12:113][208]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005919s)
+[2018.11.15-10.41.12:191][208]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.41.12:204][208]LogInit: FAudioDevice initialized.
+[2018.11.15-10.41.12:238][208]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.41.12:239][208]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.41.12
+[2018.11.15-10.41.12:239][208]LogWorld: Bringing up level for play took: 0.000846
+[2018.11.15-10.41.12:251][208]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.124
+[2018.11.15-10.41.20:182][156]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.41.20:216][156]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.41.20:260][156]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.41.20:291][157]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2018.11.15-10.44.08:131][721]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.11.15-10.45.03:333][786]Candidate modules for hot reload:
+[2018.11.15-10.45.03:333][786]  RunAndGun
+[2018.11.15-10.45.03:333][786]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,8161 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.45.03:363][786]Warning: Starting HotReload took  0.1s.
+[2018.11.15-10.49.22:323][928]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:49:22
+[2018.11.15-10.49.22:324][928]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.49.22:324][928]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.49.22:324][928]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.15-10.49.22:324][928]CompilerResultsLog:   [1/3] PlayerCharacter.cpp
+[2018.11.15-10.49.22:324][928]CompilerResultsLog:   [2/3] UE4Editor-RunAndGun-8161.lib
+[2018.11.15-10.49.22:324][928]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-8161.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-8161.exp
+[2018.11.15-10.49.22:324][928]CompilerResultsLog:   [3/3] UE4Editor-RunAndGun-8161.dll
+[2018.11.15-10.49.22:324][928]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-8161.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-8161.suppressed.exp
+[2018.11.15-10.49.22:324][928]CompilerResultsLog: Total build time: 257.95 seconds (Parallel executor: 210.10 seconds)
+[2018.11.15-10.49.22:324][928]LogMainFrame: MainFrame: Module compiling took 259.015 seconds
+[2018.11.15-10.49.22:396][928]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.49.22:402][928]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.49.22:768][928]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.49.22:768][928]Display: HotReload took 259.5s.
+[2018.11.15-10.49.25:790][937]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.49.25:817][937]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.49.25:817][937]PIE: New page: PIE session: Main (15 Nov 2018 10:49:25)
+[2018.11.15-10.49.25:817][937]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.49.25:822][937]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004593s)
+[2018.11.15-10.49.25:823][937]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.49.25:823][937]LogPlayLevel: PIE: World Init took: (0.000782s)
+[2018.11.15-10.49.25:823][937]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005500s)
+[2018.11.15-10.49.25:897][937]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.49.25:909][937]LogInit: FAudioDevice initialized.
+[2018.11.15-10.49.25:943][937]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.49.25:944][937]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.49.25
+[2018.11.15-10.49.25:944][937]LogWorld: Bringing up level for play took: 0.000855
+[2018.11.15-10.49.25:958][937]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.418
+[2018.11.15-10.49.40:166][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.49.40:203][625]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.49.40:242][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.49.40:273][627]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2018.11.15-10.49.40:974][711]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.15-10.52.36:875][546]Candidate modules for hot reload:
+[2018.11.15-10.52.36:875][546]  RunAndGun
+[2018.11.15-10.52.36:875][546]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,1827 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.52.36:884][546]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:52:40
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:   [1/3] PlayerCharacter.cpp
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\PlayerCharacter.cpp(113) : error C2664: 'FInputAxisBinding &UInputComponent::BindAxis(const FName)': cannot convert argument 3 from 'void (__cdecl APlayerCharacter::* )(FVector)' to 'void (__cdecl APlayerCharacter::* )(float)'
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\PlayerCharacter.cpp(113): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\PlayerCharacter.cpp(114) : error C2664: 'FInputAxisBinding &UInputComponent::BindAxis(const FName)': cannot convert argument 3 from 'void (__cdecl APlayerCharacter::* )(FVector)' to 'void (__cdecl APlayerCharacter::* )(float)'
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:   A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\PlayerCharacter.cpp(114): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Binaries\Win64\UE4Editor-RunAndGun-1827.dll
+[2018.11.15-10.52.40:389][945]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.15-10.52.40:389][945]CompilerResultsLog: Total build time: 3.08 seconds (Parallel executor: 0.00 seconds)
+[2018.11.15-10.52.40:389][945]LogMainFrame: MainFrame: Module compiling took 3.530 seconds
+[2018.11.15-10.52.40:389][945]Warning: HotReload failed, recompile failed
+[2018.11.15-10.53.22:661][600]Candidate modules for hot reload:
+[2018.11.15-10.53.22:661][600]  RunAndGun
+[2018.11.15-10.53.22:661][600]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,5127 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.15-10.53.22:669][600]Warning: Starting HotReload took  0.0s.
+[2018.11.15-10.53.27:095][127]CompilerResultsLog: New page: Compilation - 15 Nov 2018 10:53:27
+[2018.11.15-10.53.27:095][127]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.15-10.53.27:095][127]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.15-10.53.27:095][127]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.15-10.53.27:095][127]CompilerResultsLog:   [1/3] PlayerCharacter.cpp
+[2018.11.15-10.53.27:095][127]CompilerResultsLog:   [2/3] UE4Editor-RunAndGun-5127.lib
+[2018.11.15-10.53.27:095][127]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-5127.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-5127.exp
+[2018.11.15-10.53.27:095][127]CompilerResultsLog:   [3/3] UE4Editor-RunAndGun-5127.dll
+[2018.11.15-10.53.27:095][127]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-5127.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-5127.suppressed.exp
+[2018.11.15-10.53.27:095][127]CompilerResultsLog: Total build time: 4.14 seconds (Parallel executor: 2.53 seconds)
+[2018.11.15-10.53.27:096][127]LogMainFrame: MainFrame: Module compiling took 4.449 seconds
+[2018.11.15-10.53.27:175][127]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2018.11.15-10.53.27:181][127]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.11.15-10.53.27:536][127]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2577 classes and 607 folders.
+[2018.11.15-10.53.27:536][127]Display: HotReload took  4.9s.
+[2018.11.15-10.53.29:468][358]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.15-10.53.29:488][358]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.15-10.53.29:488][358]PIE: New page: PIE session: Main (15 Nov 2018 10:53:29)
+[2018.11.15-10.53.29:488][358]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.15-10.53.29:493][358]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004517s)
+[2018.11.15-10.53.29:494][358]LogAIModule: Creating AISystem for world Main
+[2018.11.15-10.53.29:494][358]LogPlayLevel: PIE: World Init took: (0.000631s)
+[2018.11.15-10.53.29:494][358]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.005292s)
+[2018.11.15-10.53.29:565][358]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.15-10.53.29:575][358]LogInit: FAudioDevice initialized.
+[2018.11.15-10.53.29:607][358]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.15-10.53.29:609][358]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.15-10.53.29
+[2018.11.15-10.53.29:609][358]LogWorld: Bringing up level for play took: 0.000753
+[2018.11.15-10.53.29:623][358]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.753
+[2018.11.15-10.53.31:448][574]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.53.31:482][574]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.15-10.53.31:519][574]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.15-10.53.31:552][575]LogPlayLevel: Display: Destroying online subsystem :Context_29

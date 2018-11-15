@@ -59,7 +59,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerCharacter); \
 
 #define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SideViewCameraComponent() { return STRUCT_OFFSET(APlayerCharacter, SideViewCameraComponent); } \
-	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(APlayerCharacter, CameraBoom); }
+	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(APlayerCharacter, CameraBoom); } \
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(APlayerCharacter, ProjectileClass); } \
+	FORCEINLINE static uint32 __PPO__GunOffset() { return STRUCT_OFFSET(APlayerCharacter, GunOffset); } \
+	FORCEINLINE static uint32 __PPO__FireRate() { return STRUCT_OFFSET(APlayerCharacter, FireRate); }
 
 
 #define RunAndGun_Source_RunAndGun_PlayerCharacter_h_9_PROLOG

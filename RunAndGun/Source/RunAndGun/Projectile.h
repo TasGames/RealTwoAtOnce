@@ -18,6 +18,10 @@ class RUNANDGUN_API AProjectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* ProjectileMesh;
 
+	/** Sphere collision component */
+	UPROPERTY(VisibleDefaultsOnly, Category = Projectile)
+	class USphereComponent* CollisionComp;
+
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	UProjectileMovementComponent* ProjectileMovement;
