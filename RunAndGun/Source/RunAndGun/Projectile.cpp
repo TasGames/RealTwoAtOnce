@@ -31,7 +31,7 @@ AProjectile::AProjectile()
 	ProjectileMovement->ProjectileGravityScale = 0.f; // No gravity
 
 	// Die after 3 seconds by default
-	InitialLifeSpan = 3.0f;
+	InitialLifeSpan = 2.0f;
 }
 
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
@@ -40,6 +40,7 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
+
 	}
 
 	Destroy();

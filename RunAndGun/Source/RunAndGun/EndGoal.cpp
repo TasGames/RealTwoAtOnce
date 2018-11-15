@@ -19,6 +19,10 @@ void AEndGoal::OnBeginOverlap(UPrimitiveComponent * OverlappedComp, AActor * Oth
 {
 	if (OtherActor != this)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Win");
+		APlayerCharacter *P = Cast<APlayerCharacter>(OtherActor);
+		if (P != NULL)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Win");
+		}
 	}
 }
