@@ -46,8 +46,9 @@ APlayerCharacter::APlayerCharacter()
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 
-	GunOffset = FVector(90.f, 0.f, 0.f);
+	GunOffset = FVector(100.f, 0.f, 0.f);
 	FireRate = 0.1f;
+	CanFire = true;
 
 }
 
@@ -56,7 +57,7 @@ void APlayerCharacter::Tick(float DeltaSeconds)
 	// Create fire direction vector
 	const float FireForwardValue = GetInputAxisValue("FireUp");
 	const float FireRightValue = GetInputAxisValue("FireRight");
-	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, 0.f);
+	const FVector FireDirection = FVector(0.0f, FireRightValue, FireForwardValue);
 
 	// Try and fire a shot
 	FireShot(FireDirection);
@@ -71,19 +72,14 @@ void APlayerCharacter::FireShot(FVector FireDirection)
 {
 	if (CanFire == true)
 	{
-		// If we are pressing fire stick in a direction
 		if (FireDirection.SizeSquared() > 0.0f)
 		{
 			const FRotator FireRotation = FireDirection.Rotation();
-			// Spawn projectile at an offset from this pawn
 			const FVector SpawnLocation = GetActorLocation() + FireRotation.RotateVector(GunOffset);
 
 			UWorld* const World = GetWorld();
 			if (World != NULL)
-			{
-				// spawn the projectile
 				World->SpawnActor<AProjectile>(ProjectileClass, SpawnLocation, FireRotation);
-			}
 
 			CanFire = false;
 			World->GetTimerManager().SetTimer(TimerHandle_ShotTimerExpired, this, &APlayerCharacter::ShotTimerExpired, FireRate);
@@ -91,8 +87,8 @@ void APlayerCharacter::FireShot(FVector FireDirection)
 			CanFire = false;
 		}
 
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Working");
 	}
+
 }
 
 void APlayerCharacter::ShotTimerExpired()

@@ -1,79 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\RunAndGun.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{B9ED0FC2-0BDA-43D4-B174-AEB77FC53CC8}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\RunAndGun.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\RunAndGunEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{4A5319B4-9ACB-4432-A33E-89DB819FDE99}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\RunAndGun">
-      <UniqueIdentifier>{F65A1F24-D950-4603-9027-46B714F4EC1F}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\RunAndGun\RunAndGun.Build.cs">
-      <Filter>Source\RunAndGun</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\RunAndGun\RunAndGun.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RunAndGun\RunAndGun.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\RunAndGun\PlayerCharacter.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\RunAndGun\Projectile.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\RunAndGun\MovingPlatform.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\RunAndGun\EndGoal.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\RunAndGun\Collectable.h">
-      <Filter>Source\RunAndGun</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\RunAndGun\Projectile.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\RunAndGun\MovingPlatform.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\RunAndGun\EndGoal.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\RunAndGun\Collectable.cpp">
-      <Filter>Source\RunAndGun</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\RunAndGun.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{3E3AB78C-AF01-4CEE-BE63-458764D00955}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\RunAndGun.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\RunAndGunEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{DA0D2069-1C91-4D3C-9DBF-4E527183581C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\RunAndGun">
+			<UniqueIdentifier>{95D6DB11-D712-45DB-970B-8083F8F5FEC5}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\RunAndGun\Collectable.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\Collectable.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RunAndGun\EndGoal.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\EndGoal.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RunAndGun\MovingPlatform.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\MovingPlatform.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\PlayerCharacter.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RunAndGun\Projectile.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\Projectile.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\RunAndGun\RunAndGun.Build.cs">
+			<Filter>Source\RunAndGun</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\RunAndGun\RunAndGun.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\RunAndGun.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.cpp">
+			<Filter>Source\RunAndGun</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\RunAndGun\RunAndGunGameModeBase.h">
+			<Filter>Source\RunAndGun</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>

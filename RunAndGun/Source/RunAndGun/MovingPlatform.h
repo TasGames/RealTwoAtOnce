@@ -16,8 +16,26 @@ class RUNANDGUN_API AMovingPlatform : public AActor
 	
 protected:
 
+	virtual void BeginPlay() override;
+
 	UPROPERTY(EditAnywhere)
 	float MoveSpeed;
+
+	UPROPERTY(EditAnywhere)
+	float Range;
+
+	UPROPERTY(EditAnywhere)
+	bool IsHorizontal;
+
+	FVector OriginPos;
+	FVector TargetPos;
+
+	float Max;
+	float Min;
+	float Direction;
+	float TotalMove;
+
+	void Move();
 
 public:	
 	// Sets default values for this actor's properties

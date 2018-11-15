@@ -33,6 +33,15 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsHorizontal_MetaData[];
+#endif
+		static void NewProp_IsHorizontal_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_IsHorizontal;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Range_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Range;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MoveSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
@@ -55,6 +64,24 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal_MetaData[] = {
+		{ "Category", "MovingPlatform" },
+		{ "ModuleRelativePath", "MovingPlatform.h" },
+	};
+#endif
+	void Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal_SetBit(void* Obj)
+	{
+		((AMovingPlatform*)Obj)->IsHorizontal = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal = { UE4CodeGen_Private::EPropertyClass::Bool, "IsHorizontal", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(AMovingPlatform), &Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Range_MetaData[] = {
+		{ "Category", "MovingPlatform" },
+		{ "ModuleRelativePath", "MovingPlatform.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Range = { UE4CodeGen_Private::EPropertyClass::Float, "Range", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(AMovingPlatform, Range), METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Range_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Range_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMovingPlatform_Statics::NewProp_MoveSpeed_MetaData[] = {
 		{ "Category", "MovingPlatform" },
 		{ "ModuleRelativePath", "MovingPlatform.h" },
@@ -70,6 +97,8 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Platform = { UE4CodeGen_Private::EPropertyClass::Object, "Platform", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(AMovingPlatform, Platform), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Platform_MetaData, ARRAY_COUNT(Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Platform_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMovingPlatform_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_IsHorizontal,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Range,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_MoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMovingPlatform_Statics::NewProp_Platform,
 	};
@@ -96,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeMovingPlatform() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMovingPlatform, 2140053531);
+	IMPLEMENT_CLASS(AMovingPlatform, 1772155270);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMovingPlatform(Z_Construct_UClass_AMovingPlatform, &AMovingPlatform::StaticClass, TEXT("/Script/RunAndGun"), TEXT("AMovingPlatform"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMovingPlatform);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
