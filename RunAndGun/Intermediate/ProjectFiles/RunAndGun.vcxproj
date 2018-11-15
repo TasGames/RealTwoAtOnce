@@ -417,10 +417,14 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Source\RunAndGun\RunAndGun.Build.cs" />
+    <ClCompile Include="..\..\Source\RunAndGun\Collectable.cpp" />
+    <ClCompile Include="..\..\Source\RunAndGun\EndGoal.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\MovingPlatform.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\Projectile.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\RunAndGun.cpp" />
+    <ClInclude Include="..\..\Source\RunAndGun\Collectable.h" />
+    <ClInclude Include="..\..\Source\RunAndGun\EndGoal.h" />
     <ClInclude Include="..\..\Source\RunAndGun\MovingPlatform.h" />
     <ClInclude Include="..\..\Source\RunAndGun\PlayerCharacter.h" />
     <ClInclude Include="..\..\Source\RunAndGun\Projectile.h" />

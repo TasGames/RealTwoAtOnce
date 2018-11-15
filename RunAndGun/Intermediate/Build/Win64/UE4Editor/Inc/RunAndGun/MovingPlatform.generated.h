@@ -57,7 +57,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMovingPlatform); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMovingPlatform)
 
 
-#define RunAndGun_Source_RunAndGun_MovingPlatform_h_12_PRIVATE_PROPERTY_OFFSET
+#define RunAndGun_Source_RunAndGun_MovingPlatform_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Platform() { return STRUCT_OFFSET(AMovingPlatform, Platform); } \
+	FORCEINLINE static uint32 __PPO__MoveSpeed() { return STRUCT_OFFSET(AMovingPlatform, MoveSpeed); }
+
+
 #define RunAndGun_Source_RunAndGun_MovingPlatform_h_9_PROLOG
 #define RunAndGun_Source_RunAndGun_MovingPlatform_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
