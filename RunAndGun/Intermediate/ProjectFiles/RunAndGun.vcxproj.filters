@@ -55,6 +55,9 @@
     <ClInclude Include="..\..\Source\RunAndGun\EndGoal.h">
       <Filter>Source\RunAndGun</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\RunAndGun\Collectable.h">
+      <Filter>Source\RunAndGun</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\RunAndGun\PlayerCharacter.cpp">
@@ -67,6 +70,9 @@
       <Filter>Source\RunAndGun</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\RunAndGun\EndGoal.cpp">
+      <Filter>Source\RunAndGun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RunAndGun\Collectable.cpp">
       <Filter>Source\RunAndGun</Filter>
     </ClCompile>
   </ItemGroup>
