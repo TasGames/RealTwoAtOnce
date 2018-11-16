@@ -22,7 +22,12 @@ void AEndGoal::OnBeginOverlap(UPrimitiveComponent * OverlappedComp, AActor * Oth
 		APlayerCharacter *P = Cast<APlayerCharacter>(OtherActor);
 		if (P != NULL)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, "Win");
+			Win();
 		}
 	}
 }
+
+void AEndGoal::Win_Implementation()
+{
+}
+

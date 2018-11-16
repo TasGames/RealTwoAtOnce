@@ -17,6 +17,15 @@ struct FHitResult;
 #define RUNANDGUN_EndGoal_generated_h
 
 #define RunAndGun_Source_RunAndGun_EndGoal_h_12_RPC_WRAPPERS \
+	virtual void Win_Implementation(); \
+ \
+	DECLARE_FUNCTION(execWin) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Win_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnBeginOverlap) \
 	{ \
@@ -34,6 +43,15 @@ struct FHitResult;
 
 
 #define RunAndGun_Source_RunAndGun_EndGoal_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Win_Implementation(); \
+ \
+	DECLARE_FUNCTION(execWin) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Win_Implementation(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execOnBeginOverlap) \
 	{ \
@@ -50,6 +68,8 @@ struct FHitResult;
 	}
 
 
+#define RunAndGun_Source_RunAndGun_EndGoal_h_12_EVENT_PARMS
+#define RunAndGun_Source_RunAndGun_EndGoal_h_12_CALLBACK_WRAPPERS
 #define RunAndGun_Source_RunAndGun_EndGoal_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEndGoal(); \
@@ -96,12 +116,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEndGoal); \
 	FORCEINLINE static uint32 __PPO__GoalBox() { return STRUCT_OFFSET(AEndGoal, GoalBox); }
 
 
-#define RunAndGun_Source_RunAndGun_EndGoal_h_9_PROLOG
+#define RunAndGun_Source_RunAndGun_EndGoal_h_9_PROLOG \
+	RunAndGun_Source_RunAndGun_EndGoal_h_12_EVENT_PARMS
+
+
 #define RunAndGun_Source_RunAndGun_EndGoal_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_PRIVATE_PROPERTY_OFFSET \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_RPC_WRAPPERS \
+	RunAndGun_Source_RunAndGun_EndGoal_h_12_CALLBACK_WRAPPERS \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_INCLASS \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -113,6 +137,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_PRIVATE_PROPERTY_OFFSET \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	RunAndGun_Source_RunAndGun_EndGoal_h_12_CALLBACK_WRAPPERS \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_INCLASS_NO_PURE_DECLS \
 	RunAndGun_Source_RunAndGun_EndGoal_h_12_ENHANCED_CONSTRUCTORS \
 private: \

@@ -70,6 +70,7 @@ void APlayerCharacter::Tick(float DeltaSeconds)
 
 	// Try and fire a shot
 	FireShot(FireDirection);
+
 }
 
 void APlayerCharacter::MoveRight(float Val)
@@ -103,6 +104,10 @@ void APlayerCharacter::FireShot(FVector FireDirection)
 void APlayerCharacter::ShotTimerExpired()
 {
 	CanFire = true;
+}
+
+void APlayerCharacter::Lose_Implementation()
+{
 }
 
 // Called to bind functionality to input

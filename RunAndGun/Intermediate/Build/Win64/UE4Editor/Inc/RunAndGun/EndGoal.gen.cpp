@@ -21,13 +21,20 @@ void EmptyLinkFunctionForGeneratedCodeEndGoal() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	RUNANDGUN_API UFunction* Z_Construct_UFunction_AEndGoal_Win();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 // End Cross Module References
+	static FName NAME_AEndGoal_Win = FName(TEXT("Win"));
+	void AEndGoal::Win()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AEndGoal_Win),NULL);
+	}
 	void AEndGoal::StaticRegisterNativesAEndGoal()
 	{
 		UClass* Class = AEndGoal::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnBeginOverlap", &AEndGoal::execOnBeginOverlap },
+			{ "Win", &AEndGoal::execWin },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -112,6 +119,29 @@ void EmptyLinkFunctionForGeneratedCodeEndGoal() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AEndGoal_Win_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AEndGoal_Win_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Win" },
+		{ "ModuleRelativePath", "EndGoal.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AEndGoal_Win_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AEndGoal, "Win", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x08020C00, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AEndGoal_Win_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AEndGoal_Win_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AEndGoal_Win()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AEndGoal_Win_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AEndGoal_NoRegister()
 	{
 		return AEndGoal::StaticClass();
@@ -137,6 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeEndGoal() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AEndGoal_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AEndGoal_OnBeginOverlap, "OnBeginOverlap" }, // 73921251
+		{ &Z_Construct_UFunction_AEndGoal_Win, "Win" }, // 2942660765
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEndGoal_Statics::Class_MetaDataParams[] = {
@@ -178,7 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeEndGoal() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEndGoal, 405215328);
+	IMPLEMENT_CLASS(AEndGoal, 4206766001);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AEndGoal(Z_Construct_UClass_AEndGoal, &AEndGoal::StaticClass, TEXT("/Script/RunAndGun"), TEXT("AEndGoal"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEndGoal);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

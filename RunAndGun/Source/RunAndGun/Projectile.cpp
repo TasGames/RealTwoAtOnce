@@ -43,6 +43,9 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 		if (P != NULL)
 		{
 			P->Health -= Damage;
+
+			if (P->Health <= 0)
+				P->Lose();
 		}
 	}
 

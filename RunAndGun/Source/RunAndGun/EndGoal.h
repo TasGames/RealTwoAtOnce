@@ -23,4 +23,7 @@ public:
 	// Sets default values for this actor's properties
 	AEndGoal();
 
+	UFUNCTION(BlueprintNativeEvent, Category = Win)
+	void Win();
+
 };

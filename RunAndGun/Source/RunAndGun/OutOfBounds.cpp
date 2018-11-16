@@ -23,6 +23,9 @@ void AOutOfBounds::OnBeginOverlap(UPrimitiveComponent * OverlappedComp, AActor *
 		{
 			P->SetActorLocation(SpawnLocation);
 			P->Health -= Damage;
+
+			if (P->Health <= 0)
+				P->Lose();
 		}
 	}
 }

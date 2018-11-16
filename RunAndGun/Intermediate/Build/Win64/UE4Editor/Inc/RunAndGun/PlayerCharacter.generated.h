@@ -13,8 +13,32 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define RUNANDGUN_PlayerCharacter_generated_h
 
-#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS
-#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS \
+	virtual void Lose_Implementation(); \
+ \
+	DECLARE_FUNCTION(execLose) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Lose_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
+#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void Lose_Implementation(); \
+ \
+	DECLARE_FUNCTION(execLose) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Lose_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
+#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_EVENT_PARMS
+#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_CALLBACK_WRAPPERS
 #define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPlayerCharacter(); \
@@ -65,12 +89,16 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayerCharacter); \
 	FORCEINLINE static uint32 __PPO__FireRate() { return STRUCT_OFFSET(APlayerCharacter, FireRate); }
 
 
-#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_9_PROLOG
+#define RunAndGun_Source_RunAndGun_PlayerCharacter_h_9_PROLOG \
+	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_EVENT_PARMS
+
+
 #define RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS \
+	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_CALLBACK_WRAPPERS \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_INCLASS \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_STANDARD_CONSTRUCTORS \
 public: \
@@ -82,6 +110,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_CALLBACK_WRAPPERS \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_INCLASS_NO_PURE_DECLS \
 	RunAndGun_Source_RunAndGun_PlayerCharacter_h_12_ENHANCED_CONSTRUCTORS \
 private: \

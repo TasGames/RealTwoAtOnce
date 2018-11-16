@@ -56,6 +56,9 @@ public:
 
 	virtual void Tick(float DeltaSeconds) override;
 
+	UFUNCTION(BlueprintNativeEvent, Category = Lose)
+	void Lose();
+
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float MaxHealth;
 
