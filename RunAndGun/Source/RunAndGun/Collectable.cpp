@@ -29,7 +29,7 @@ void ACollectable::OnBeginOverlap(UPrimitiveComponent * OverlappedComp, AActor *
 		if (P != NULL)
 		{
 			Destroy();
-			Total += Value;
+			P->Score += Value;
 
 		}
 	}

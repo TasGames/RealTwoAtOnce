@@ -410,7 +410,11 @@
     <NMakeOutput>..\..\Binaries\HTML5\RunAndGun-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\RunAndGun\OutOfBounds.cpp" />
+    <ClCompile Include="..\..\Source\RunAndGun\Respawn.cpp" />
     <ClCompile Include="..\..\Source\RunAndGun\Turret.cpp" />
+    <ClInclude Include="..\..\Source\RunAndGun\OutOfBounds.h" />
+    <ClInclude Include="..\..\Source\RunAndGun\Respawn.h" />
     <ClInclude Include="..\..\Source\RunAndGun\Turret.h" />
     <None Include="..\..\RunAndGun.uproject" />
     <None Include="..\..\Source\RunAndGun.Target.cs" />
