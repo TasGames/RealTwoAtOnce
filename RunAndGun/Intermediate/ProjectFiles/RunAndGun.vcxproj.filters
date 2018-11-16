@@ -79,9 +79,15 @@
     <ClInclude Include="..\..\Source\RunAndGun\Turret.h">
       <Filter>Source\RunAndGun</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\RunAndGun\OutOfBounds.h">
+      <Filter>Source\RunAndGun</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\RunAndGun\Turret.cpp">
+      <Filter>Source\RunAndGun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\RunAndGun\OutOfBounds.cpp">
       <Filter>Source\RunAndGun</Filter>
     </ClCompile>
   </ItemGroup>

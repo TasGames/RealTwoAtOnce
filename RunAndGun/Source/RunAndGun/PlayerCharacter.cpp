@@ -48,8 +48,16 @@ APlayerCharacter::APlayerCharacter()
 
 	GunOffset = FVector(100.f, 0.f, 0.f);
 	FireRate = 0.1f;
-	Health = 100.0f;
+	MaxHealth = 100.0f;
 	CanFire = true;
+
+}
+
+void APlayerCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Health = MaxHealth;
 
 }
 

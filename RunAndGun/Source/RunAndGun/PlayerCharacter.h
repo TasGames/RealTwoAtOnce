@@ -21,6 +21,8 @@ class RUNANDGUN_API APlayerCharacter : public ACharacter
 
 protected:
 
+	virtual void BeginPlay() override;
+
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 	TSubclassOf<class AProjectile> ProjectileClass;
 
@@ -55,7 +57,13 @@ public:
 	virtual void Tick(float DeltaSeconds) override;
 
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	float MaxHealth;
+
+	UPROPERTY(BlueprintReadWrite)
 	float Health;
+
+	UPROPERTY(BlueprintReadWrite)
+	int Score;
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
