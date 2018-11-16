@@ -1,29 +1,7 @@
-﻿  Performing full C++ include scan (building a new target)
-  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for RunAndGunEditor (.uproject file is newer)
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for hot reloading RunAndGunEditor (modules to compile have changed)
+  Compiling game modules for hot reload
   Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Parsing headers for RunAndGunEditor
-    Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for RunAndGunEditor in 10.6002835 seconds
-  Building 17 actions with 4 processes...
-    [1/17] SharedPCH.Engine.cpp
-    [2/17] RunAndGun.init.gen.cpp
-    [3/17] MovingPlatform.gen.cpp
-    [4/17] Projectile.gen.cpp
-    [5/17] PlayerCharacter.gen.cpp
-    [6/17] RunAndGun.cpp
-    [7/17] EndGoal.gen.cpp
-    [8/17] Collectable.gen.cpp
-    [9/17] Projectile.cpp
-    [10/17] MovingPlatform.cpp
-    [11/17] EndGoal.cpp
-    [12/17] PlayerCharacter.cpp
-    [13/17] RunAndGunGameModeBase.cpp
-    [14/17] Collectable.cpp
-    [15/17] RunAndGunGameModeBase.gen.cpp
-    [16/17] UE4Editor-RunAndGun.lib
-       Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun.exp
-    [17/17] UE4Editor-RunAndGun.dll
-       Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun.suppressed.exp
+  Target is up to date
   Deploying RunAndGunEditor Win64 Development...
-  Total build time: 49.45 seconds (Parallel executor: 29.99 seconds)
+  Total build time: 4.89 seconds (NoActionsToExecute executor: 0.00 seconds)

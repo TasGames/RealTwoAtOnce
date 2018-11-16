@@ -3905,3 +3905,508 @@ Make sure 'PlayerCharacter' has been compiled for  Get Health
 [2018.11.16-18.36.15:962][433]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
 [2018.11.16-18.36.16:265][433]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2581 classes and 607 folders.
 [2018.11.16-18.36.16:279][433]Display: HotReload took  0.4s.
+[2018.11.16-18.45.34:852][727]Candidate modules for hot reload:
+[2018.11.16-18.45.34:852][727]  RunAndGun
+[2018.11.16-18.45.34:852][727]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,4487 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.45.34:859][727]Warning: Starting HotReload took  0.0s.
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:45:50
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.16-18.45.50:394][523]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 11.5362847 seconds
+[2018.11.16-18.45.50:394][523]CompilerResultsLog: Building 5 actions with 4 processes...
+[2018.11.16-18.45.50:394][523]CompilerResultsLog:   [1/5] OutOfBounds.cpp
+[2018.11.16-18.45.50:394][523]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(14) : error C2653: 'AOu': is not a class or namespace name
+[2018.11.16-18.45.50:394][523]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(14) : error C2276: '&': illegal operation on bound member function expression
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(14) : error C2672: 'TBaseDynamicMulticastDelegate<FWeakObjectPtr,void,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::__Internal_AddDynamic': no matching overloaded function found
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(14) : error C2780: 'void TBaseDynamicMulticastDelegate<FWeakObjectPtr,void,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::__Internal_AddDynamic(UserClass *,TBaseDynamicDelegate<FWeakObjectPtr,RetValType,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::TMethodPtrResolver<UserClass>::FMethodPtr,FName)': expects 3 arguments - 2 provided
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:           with
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:           [
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:               RetValType=void
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:           ]
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.20\Engine\Source\Runtime\Core\Public\Delegates/DelegateSignatureImpl.inl(1131): note: see declaration of 'TBaseDynamicMulticastDelegate<FWeakObjectPtr,void,UPrimitiveComponent *,AActor *,UPrimitiveComponent *,int32,bool,const FHitResult &>::__Internal_AddDynamic'
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:   [2/5] RunAndGun.init.gen.cpp
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:   [3/5] OutOfBounds.gen.cpp
+[2018.11.16-18.45.50:395][523]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Binaries\Win64\UE4Editor-RunAndGun-4487.dll
+[2018.11.16-18.45.50:395][523]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.16-18.45.50:395][523]CompilerResultsLog: Total build time: 15.10 seconds (Parallel executor: 0.00 seconds)
+[2018.11.16-18.45.50:395][523]LogMainFrame: MainFrame: Module compiling took 15.558 seconds
+[2018.11.16-18.45.50:395][523]Warning: HotReload failed, recompile failed
+[2018.11.16-18.46.20:213][789]Candidate modules for hot reload:
+[2018.11.16-18.46.20:213][789]  RunAndGun
+[2018.11.16-18.46.20:213][789]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,2379 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.46.20:219][789]Warning: Starting HotReload took  0.0s.
+[2018.11.16-18.46.25:135][374]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:46:25
+[2018.11.16-18.46.25:135][374]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.46.25:135][374]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.46.25:135][374]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.16-18.46.25:135][374]CompilerResultsLog:   [1/3] OutOfBounds.cpp
+[2018.11.16-18.46.25:135][374]CompilerResultsLog:   [2/3] UE4Editor-RunAndGun-2379.lib
+[2018.11.16-18.46.25:135][374]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-2379.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-2379.exp
+[2018.11.16-18.46.25:135][374]CompilerResultsLog:   [3/3] UE4Editor-RunAndGun-2379.dll
+[2018.11.16-18.46.25:135][374]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-2379.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-2379.suppressed.exp
+[2018.11.16-18.46.25:135][374]CompilerResultsLog: Total build time: 4.60 seconds (Parallel executor: 2.69 seconds)
+[2018.11.16-18.46.25:136][374]LogMainFrame: MainFrame: Module compiling took 4.936 seconds
+[2018.11.16-18.46.25:225][374]LogClass: Could not find existing class OutOfBounds in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.16-18.46.25:225][374]LogClass: Function OnBeginOverlap is new.
+[2018.11.16-18.46.25:241][374]LogHotReload: Re-instancing OutOfBounds after hot-reload.
+[2018.11.16-18.46.25:366][374]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0003 seconds. Added 8 classes and 2 folders.
+[2018.11.16-18.46.25:372][374]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2018.11.16-18.46.25:701][374]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2581 classes and 607 folders.
+[2018.11.16-18.46.25:701][374]Display: HotReload took  5.5s.
+[2018.11.16-18.46.41:252][896]Candidate modules for hot reload:
+[2018.11.16-18.46.41:252][896]  RunAndGun
+[2018.11.16-18.46.41:252][896]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,7669 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.46.41:260][896]Warning: Starting HotReload took  0.0s.
+[2018.11.16-18.46.43:434][132]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:46:43
+[2018.11.16-18.46.43:434][132]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.46.43:434][132]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.46.43:434][132]CompilerResultsLog: Target is up to date
+[2018.11.16-18.46.43:434][132]CompilerResultsLog: Total build time: 1.90 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2018.11.16-18.46.43:434][132]LogMainFrame: MainFrame: Module compiling took 2.203 seconds
+[2018.11.16-18.46.43:749][132]LogContentBrowser: Native class hierarchy populated in 0.0134 seconds. Added 2581 classes and 607 folders.
+[2018.11.16-18.46.43:749][132]Display: HotReload took  2.5s.
+[2018.11.16-18.46.46:852][499]LogEditor: Attempting to add actor of class 'OutOfBounds' to level at 20.00,-1350.00,-450.00
+[2018.11.16-18.46.47:511][576]LogEditor: Attempting to add actor of class 'OutOfBounds' to level at 640.00,-1350.00,170.00
+[2018.11.16-18.47.20:516][311]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.47.48:384][238]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.48.04:129][ 74]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.48.11:822][987]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.48.29:571][ 71]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.48.29:704][ 87]LogTemp: Repeating last play command: Selected Viewport
+[2018.11.16-18.48.29:724][ 87]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.11.16-18.48.29:724][ 87]PIE: New page: PIE session: Main (16 Nov 2018 18:48:29)
+[2018.11.16-18.48.29:724][ 87]LogPlayLevel: Creating play world package: /Game/MyContent/Maps/UEDPIE_0_Main
+[2018.11.16-18.48.29:737][ 87]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012461s)
+[2018.11.16-18.48.29:737][ 87]LogAIModule: Creating AISystem for world Main
+[2018.11.16-18.48.29:737][ 87]LogPlayLevel: PIE: World Init took: (0.000802s)
+[2018.11.16-18.48.29:738][ 87]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/MyContent/Maps/Main.Main to /Game/MyContent/Maps/UEDPIE_0_Main.Main (0.013406s)
+[2018.11.16-18.48.29:829][ 87]LogInit: XAudio2 using 'Headphones (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.11.16-18.48.29:841][ 87]LogInit: FAudioDevice initialized.
+[2018.11.16-18.48.29:870][ 87]LogLoad: Game class is 'Bp_RunAndGunGameModeBase_C'
+[2018.11.16-18.48.29:872][ 87]LogWorld: Bringing World /Game/MyContent/Maps/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2018.11.16-18.48.29
+[2018.11.16-18.48.29:873][ 87]LogWorld: Bringing up level for play took: 0.002107
+[2018.11.16-18.48.29:887][ 87]PIE: Play in editor start time for /Game/MyContent/Maps/UEDPIE_0_Main -0.16
+[2018.11.16-18.48.34:038][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.16-18.48.34:076][578]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.11.16-18.48.34:109][578]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.11.16-18.48.34:138][579]LogPlayLevel: Display: Destroying online subsystem :Context_114
+[2018.11.16-18.48.47:468][154]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.48.47:580][165]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.11.16-18.48.47:718][165]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/MainBD61E6084EDAE40A551EE6AE1CAAF347.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
+[2018.11.16-18.49.04:936][212]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.49.45:257][954]Cmd: SELECT NONE
+[2018.11.16-18.49.47:904][254]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.16-18.49.52:157][718]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.49.53:899][924]Cmd: EDIT COPY
+[2018.11.16-18.49.54:655][ 14]Cmd: EDIT PASTE
+[2018.11.16-18.50.10:961][909]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.50.16:387][550]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.50.29:257][ 72]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.50.53:659][842]Cmd: SELECT NONE
+[2018.11.16-18.50.54:446][932]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.50.54:565][944]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.11.16-18.50.54:706][944]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/MainB0DF1AFD4CA17D64C3C4CFA3A0B83B9F.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
+[2018.11.16-18.51.06:782][369]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.16-18.51.07:384][422]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.11.16-18.51.09:324][649]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.51.14:926][291]Cmd: SELECT NONE
+[2018.11.16-18.51.16:272][441]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.11.16-18.51.16:393][453]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MyContent/Maps/Main" FILE="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.11.16-18.51.16:529][453]LogSavePackage: Moving 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Saved/MainFD261826466AF688E0CA0DA3F90C1243.tmp' to 'A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/Content/MyContent/Maps/Main.umap'
+[2018.11.16-18.53.32:603][229]Running C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -invalidatemakefilesonly
+[2018.11.16-18.53.33:437][229]Invalidating makefiles only in this run.
+[2018.11.16-18.53.33:566][229]Candidate modules for hot reload:
+[2018.11.16-18.53.33:566][229]  RunAndGun
+[2018.11.16-18.53.33:566][229]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,867 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:53:49
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Creating makefile for hot reloading RunAndGunEditor (no existing makefile)
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Parsing headers for RunAndGunEditor
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   Running UnrealHeaderTool "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\RunAndGun.uproject" "A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\RunAndGunEditor\Development\RunAndGunEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Reflection code generated for RunAndGunEditor in 9.6742199 seconds
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Building 6 actions with 4 processes...
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   [1/6] OutOfBounds.cpp
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(25) : error C2660: 'AActor::SetActorLocation': function does not take 0 arguments
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.20\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(835): note: see declaration of 'AActor::SetActorLocation'
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   [2/6] Respawn.cpp
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   [3/6] RunAndGun.init.gen.cpp
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:   [4/6] Respawn.gen.cpp
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Binaries\Win64\UE4Editor-RunAndGun-867.dll
+[2018.11.16-18.53.49:395][229]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.16-18.53.49:395][229]CompilerResultsLog: Total build time: 15.58 seconds (Parallel executor: 0.00 seconds)
+[2018.11.16-18.53.49:395][229]LogMainFrame: MainFrame: Module compiling took 15.843 seconds
+[2018.11.16-18.53.49:395][229]Warning: HotReload failed, recompile failed
+[2018.11.16-18.53.49:397][229]Warning: RebindPackages failed because compilation failed.
+[2018.11.16-18.54.00:335][229]LogSlate: Window 'Message' being destroyed
+[2018.11.16-18.54.00:384][229]LogSlate: Window 'Add C++ Class' being destroyed
+[2018.11.16-18.54.00:395][229]LogSlate: Took 0.003172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.11.16-18.54.06:138][856]LogSlate: Window 'Output Log' being destroyed
+[2018.11.16-18.55.15:556][294]Candidate modules for hot reload:
+[2018.11.16-18.55.15:556][294]  RunAndGun
+[2018.11.16-18.55.15:556][294]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,1362 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.55.15:562][294]Warning: Starting HotReload took  0.0s.
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:55:22
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Creating makefile for hot reloading RunAndGunEditor (modules to compile have changed)
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Using Visual Studio 2017 14.15.26726 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726) and Windows 10.0.17134.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog:   [1/3] OutOfBounds.cpp
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog:    A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Source\RunAndGun\OutOfBounds.cpp(25) : error C2660: 'AActor::SetActorLocation': function does not take 0 arguments
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.20\Engine\Source\Runtime\Engine\Classes\GameFramework/Actor.h(835): note: see declaration of 'AActor::SetActorLocation'
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Binaries\Win64\UE4Editor-RunAndGun-1362.dll
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.11.16-18.55.22:144][ 82]CompilerResultsLog: Total build time: 6.29 seconds (Parallel executor: 0.00 seconds)
+[2018.11.16-18.55.22:144][ 82]LogMainFrame: MainFrame: Module compiling took 6.611 seconds
+[2018.11.16-18.55.22:144][ 82]Warning: HotReload failed, recompile failed
+[2018.11.16-18.55.49:114][691]Candidate modules for hot reload:
+[2018.11.16-18.55.49:114][691]  RunAndGun
+[2018.11.16-18.55.49:115][691]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=RunAndGun,315 Win64 Development -TargetType=Editor -Project="A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" -canskiplink "A:/Projects/Unreal Engine Projects/RealTwoAtOnce/RunAndGun/RunAndGun.uproject" ]
+[2018.11.16-18.55.49:121][691]Warning: Starting HotReload took  0.0s.
+[2018.11.16-18.55.54:187][295]CompilerResultsLog: New page: Compilation - 16 Nov 2018 18:55:54
+[2018.11.16-18.55.54:187][295]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2018.11.16-18.55.54:187][295]CompilerResultsLog: Compiling game modules for hot reload
+[2018.11.16-18.55.54:187][295]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.11.16-18.55.54:187][295]CompilerResultsLog:   [1/3] OutOfBounds.cpp
+[2018.11.16-18.55.54:187][295]CompilerResultsLog:   [2/3] UE4Editor-RunAndGun-315.lib
+[2018.11.16-18.55.54:187][295]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-315.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-315.exp
+[2018.11.16-18.55.54:187][295]CompilerResultsLog:   [3/3] UE4Editor-RunAndGun-315.dll
+[2018.11.16-18.55.54:187][295]CompilerResultsLog:      Creating library A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-315.suppressed.lib and object A:\Projects\Unreal Engine Projects\RealTwoAtOnce\RunAndGun\Intermediate\Build\Win64\UE4Editor\Development\RunAndGun\UE4Editor-RunAndGun-315.suppressed.exp
+[2018.11.16-18.55.54:187][295]CompilerResultsLog: Total build time: 4.76 seconds (Parallel executor: 2.92 seconds)
+[2018.11.16-18.55.54:187][295]LogMainFrame: MainFrame: Module compiling took 5.086 seconds
+[2018.11.16-18.55.54:246][295]LogClass: Could not find existing class Respawn in package /Script/RunAndGun for HotReload, assuming new class
+[2018.11.16-18.55.54:253][295]LogHotReload: Re-instancing OutOfBounds after hot-reload.
+[2018.11.16-18.55.54:389][295]LogContentBrowser: Native class hierarchy updated for 'RunAndGun' in 0.0004 seconds. Added 9 classes and 2 folders.
+[2018.11.16-18.55.54:394][295]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2018.11.16-18.55.54:721][295]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2582 classes and 607 folders.
+[2018.11.16-18.55.54:721][295]Display: HotReload took  5.6s.
+[2018.11.16-18.57.55:265][905]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2018.11.16-18.57.55:370][905]LogSlate: Window 'RunAndGun - Unreal Editor' being destroyed
+[2018.11.16-18.57.55:371][905]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.11.16-18.57.55:678][906]Cmd: QUIT_EDITOR
+[2018.11.16-18.57.55:740][906]LogExit: Preparing to exit.
+[2018.11.16-18.57.56:293][906]LogExit: Editor shut down
+[2018.11.16-18.57.56:294][906]LogExit: Transaction tracking system shut down
+[2018.11.16-18.57.56:751][906]LogExit: Object subsystem successfully closed.
+[2018.11.16-18.57.56:775][906]LogShaderCompilers: Display: Shaders left to compile 0
+[2018.11.16-18.57.56:781][906]LogD3D11RHI: Shutdown
+[2018.11.16-18.57.56:781][906]LogD3D11RHI: CleanupD3DDevice
+[2018.11.16-18.57.56:797][906]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module RunAndGun (646)
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module SequencerWidgets (637)
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (626)
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module BlueprintGraph (620)
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (618)
+[2018.11.16-18.57.56:821][906]LogModuleManager: Shutting down and abandoning module Voice (616)
+[2018.11.16-18.57.56:822][906]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (614)
+[2018.11.16-18.57.56:822][906]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (612)
+[2018.11.16-18.57.56:822][906]LogModuleManager: Shutting down and abandoning module AddContentDialog (610)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module WidgetCarousel (609)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module EditorWidgets (606)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module CollectionManager (604)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module SceneOutliner (602)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module StatsViewer (600)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module FoliageEdit (598)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module LandscapeEditor (596)
+[2018.11.16-18.57.56:826][906]LogModuleManager: Shutting down and abandoning module MeshPaintMode (594)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (592)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module ActorPickerMode (590)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module GeometryMode (588)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module TextureAlignMode (586)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module BspMode (584)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (582)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (580)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module AutomationWorker (578)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (576)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module SequenceRecorder (575)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (572)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (570)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module PlacementMode (569)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module MaterialEditor (568)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (564)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (562)
+[2018.11.16-18.57.56:827][906]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (560)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (558)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (556)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (554)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (552)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (550)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (548)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (546)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (544)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (542)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (540)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module CharacterAI (538)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module SmartSnapping (536)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module SessionServices (534)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module ViewportSnapping (532)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module ViewportInteraction (530)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module ClothPainter (528)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (527)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module LogVisualizer (524)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module IntroTutorials (522)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (521)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (518)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (516)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (514)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (512)
+[2018.11.16-18.57.56:828][906]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (511)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (508)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (506)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (504)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (502)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module InputBindingEditor (500)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module MergeActors (498)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (496)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module LocalizationService (495)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module HardwareTargeting (492)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (490)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module UndoHistory (488)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module XmlParser (486)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module Blutility (484)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (482)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (481)
+[2018.11.16-18.57.58:393][906]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (478)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module SettingsEditor (476)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module ProjectLauncher (474)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module SessionFrontend (472)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module ProfilerClient (470)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module DeviceManager (468)
+[2018.11.16-18.57.58:394][906]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (467)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module AutomationController (464)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module AutomationWindow (462)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module Layers (460)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (458)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module DetailCustomizations (456)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module PackagesDialog (454)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module Persona (452)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (451)
+[2018.11.16-18.57.58:448][906]LogModuleManager: Shutting down and abandoning module AnimGraph (449)
+[2018.11.16-18.57.58:449][906]LogModuleManager: Shutting down and abandoning module Kismet (446)
+[2018.11.16-18.57.58:469][906]LogModuleManager: Shutting down and abandoning module GraphEditor (444)
+[2018.11.16-18.57.58:470][906]LogModuleManager: Shutting down and abandoning module ClassViewer (442)
+[2018.11.16-18.57.58:472][906]LogModuleManager: Shutting down and abandoning module Toolbox (440)
+[2018.11.16-18.57.58:472][906]LogModuleManager: Shutting down and abandoning module DesktopPlatform (439)
+[2018.11.16-18.57.58:473][906]LogModuleManager: Shutting down and abandoning module ModuleUI (436)
+[2018.11.16-18.57.58:473][906]LogModuleManager: Shutting down and abandoning module MovieSceneTools (434)
+[2018.11.16-18.57.58:473][906]LogModuleManager: Shutting down and abandoning module OutputLog (432)
+[2018.11.16-18.57.58:473][906]LogModuleManager: Shutting down and abandoning module GammaUI (430)
+[2018.11.16-18.57.58:473][906]LogModuleManager: Shutting down and abandoning module Documentation (428)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (426)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module MovieScene (424)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (422)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module LauncherPlatform (420)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module AnalyticsET (418)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module PortalServices (416)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module PortalRpc (414)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module MessagingRpc (412)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module AIModule (410)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module GameplayDebugger (409)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module AITestSuite (407)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module NavigationSystem (405)
+[2018.11.16-18.57.58:474][906]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module OculusInput (392)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
+[2018.11.16-18.57.58:588][906]LogModuleManager: Shutting down and abandoning module CableComponent (384)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (372)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module MediaCompositing (370)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module LinearTimecode (368)
+[2018.11.16-18.57.58:589][906]LogModuleManager: Shutting down and abandoning module ImgMedia (366)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module HTML5Networking (364)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (362)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (360)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module BackChannel (358)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module AppleVision (356)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
+[2018.11.16-18.57.58:593][906]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (344)
+[2018.11.16-18.57.58:594][906]LogModuleManager: Shutting down and abandoning module DatasmithContent (342)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
+[2018.11.16-18.57.58:595][906]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module SourceControl (315)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (310)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (308)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (306)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module Paper2DEditor (304)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module MeshPaint (303)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (298)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (296)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module PhysXVehicles (294)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module OculusEditor (292)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (290)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (288)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (286)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
+[2018.11.16-18.57.58:596][906]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
+[2018.11.16-18.57.58:696][906]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module DataValidation (270)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
+[2018.11.16-18.57.58:797][906]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
+[2018.11.16-18.57.58:800][906]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
+[2018.11.16-18.57.58:800][906]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
+[2018.11.16-18.57.58:800][906]LogModuleManager: Shutting down and abandoning module MainFrame (262)
+[2018.11.16-18.57.58:801][906]LogModuleManager: Shutting down and abandoning module HotReload (261)
+[2018.11.16-18.57.58:803][906]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module TreeMap (255)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module Paper2D (248)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
+[2018.11.16-18.57.58:806][906]LogModuleManager: Shutting down and abandoning module WmfMedia (244)
+[2018.11.16-18.57.58:809][906]LogModuleManager: Shutting down and abandoning module Media (243)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module PacketHandler (240)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (238)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (236)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module MediaAssets (234)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module Overlay (232)
+[2018.11.16-18.57.58:815][906]LogModuleManager: Shutting down and abandoning module OverlayEditor (231)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module VREditor (228)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module StringTableEditor (226)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (224)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (222)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module FunctionalTesting (220)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (218)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (217)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module UMG (214)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module UMGEditor (213)
+[2018.11.16-18.57.58:816][906]LogModuleManager: Shutting down and abandoning module Sequencer (212)
+[2018.11.16-18.57.58:817][906]LogModuleManager: Shutting down and abandoning module MessageLog (209)
+[2018.11.16-18.57.58:817][906]LogModuleManager: Shutting down and abandoning module SlateReflector (204)
+[2018.11.16-18.57.58:817][906]LogModuleManager: Shutting down and abandoning module Slate (202)
+[2018.11.16-18.57.58:817][906]LogModuleManager: Shutting down and abandoning module EditorStyle (200)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module MRMesh (198)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (196)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (194)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module XAudio2 (192)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module Networking (190)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module Core (188)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module LevelSequence (186)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module KismetCompiler (184)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module MeshUtilities (182)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (181)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (180)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (179)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (177)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (175)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (173)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module MaterialBaking (169)
+[2018.11.16-18.57.58:820][906]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (165)
+[2018.11.16-18.57.58:821][906]LogModuleManager: Shutting down and abandoning module DerivedDataCache (162)
+[2018.11.16-18.57.58:849][906]LogDerivedDataCache: Shutdown
+[2018.11.16-18.57.58:849][906]LogModuleManager: Shutting down and abandoning module XGEController (160)
+[2018.11.16-18.57.58:849][906]LogXGEController: Cleaning working directory: C:/Users/Thomas Simon/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TargetPlatform (158)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (157)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (155)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (153)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (151)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (149)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (147)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (145)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (143)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (141)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (139)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module ImageWrapper (138)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (135)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (133)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (131)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (129)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (127)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (125)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (123)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (121)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (119)
+[2018.11.16-18.57.58:850][906]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (117)
+[2018.11.16-18.57.58:854][906]LogModuleManager: Shutting down and abandoning module Messaging (115)
+[2018.11.16-18.57.58:854][906]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (113)
+[2018.11.16-18.57.58:858][906]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (111)
+[2018.11.16-18.57.58:858][906]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (109)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (107)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (105)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (103)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (101)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (99)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (97)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (95)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (93)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (91)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module InputCore (88)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module Settings (86)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module PhysXCooking (84)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module SteamVR (82)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module OculusHMD (80)
+[2018.11.16-18.57.58:900][906]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (78)
+[2018.11.16-18.57.58:901][906]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (76)
+[2018.11.16-18.57.58:901][906]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (74)
+[2018.11.16-18.57.58:901][906]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (70)
+[2018.11.16-18.57.58:902][906]LogModuleManager: Shutting down and abandoning module XMPP (65)
+[2018.11.16-18.57.58:902][906]LogModuleManager: Shutting down and abandoning module WebSockets (64)
+[2018.11.16-18.57.58:913][906]LogModuleManager: Shutting down and abandoning module HTTP (61)
+[2018.11.16-18.57.58:914][906]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.11.16-18.57.58:914][906]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B882586D3-4B34-43F8-0A11-DF8E76182B6A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.20.3-4369336%2B%2B%2BUE4%2BRelease-4.20&UserID=5fdfb9eb4a3af766a039a8b9b40f75dc%7C75455451a11a4e86936f96d58b7d0fbf%7C0157599c-15ed-48c0-9aab-018aec8adfe9&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.11.16-18.57.58:934][906]LogModuleManager: Shutting down and abandoning module SSL (60)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapEmulator (56)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (54)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (52)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (50)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (48)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (46)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapGestures (44)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (42)
+[2018.11.16-18.57.58:936][906]LogModuleManager: Shutting down and abandoning module MagicLeapController (40)
+[2018.11.16-18.57.58:936][906]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module MagicLeap (38)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.11.16-18.57.58:937][906]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.11.16-18.57.58:940][906]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.11.16-18.57.58:940][906]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.11.16-18.57.58:941][906]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.11.16-18.57.58:945][906]LogExit: Exiting.
+[2018.11.16-18.57.58:974][906]Log file closed, 11/16/18 18:57:58

@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeRunAndGun_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/RunAndGun",
 				PKG_CompiledIn | 0x00000000,
-				0xD7E74B18,
-				0x88A45C24,
+				0x140B9E48,
+				0x3C0FA784,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};
