@@ -57,7 +57,13 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATurret); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATurret)
 
 
-#define RunAndGun_Source_RunAndGun_Turret_h_12_PRIVATE_PROPERTY_OFFSET
+#define RunAndGun_Source_RunAndGun_Turret_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__TurretMesh() { return STRUCT_OFFSET(ATurret, TurretMesh); } \
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(ATurret, ProjectileClass); } \
+	FORCEINLINE static uint32 __PPO__FireRate() { return STRUCT_OFFSET(ATurret, FireRate); } \
+	FORCEINLINE static uint32 __PPO__OffSet() { return STRUCT_OFFSET(ATurret, OffSet); }
+
+
 #define RunAndGun_Source_RunAndGun_Turret_h_9_PROLOG
 #define RunAndGun_Source_RunAndGun_Turret_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
