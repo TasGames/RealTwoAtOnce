@@ -81,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		{ "ModuleRelativePath", "PlayerCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health = { UE4CodeGen_Private::EPropertyClass::Float, "Health", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(APlayerCharacter, Health), METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health = { UE4CodeGen_Private::EPropertyClass::Float, "Health", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000005, 1, nullptr, STRUCT_OFFSET(APlayerCharacter, Health), METADATA_PARAMS(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health_MetaData, ARRAY_COUNT(Z_Construct_UClass_APlayerCharacter_Statics::NewProp_Health_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerCharacter_Statics::NewProp_FireRate_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -156,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerCharacter, 3972655948);
+	IMPLEMENT_CLASS(APlayerCharacter, 1704375248);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APlayerCharacter(Z_Construct_UClass_APlayerCharacter, &APlayerCharacter::StaticClass, TEXT("/Script/RunAndGun"), TEXT("APlayerCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APlayerCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

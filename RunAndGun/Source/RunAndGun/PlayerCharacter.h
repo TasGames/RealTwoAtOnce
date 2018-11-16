@@ -32,9 +32,6 @@ protected:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float FireRate;
 
-	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
-	float Health;
-
 	/** Called for side to side input */
 	void MoveRight(float Val);
 
@@ -56,6 +53,9 @@ public:
 	APlayerCharacter();
 
 	virtual void Tick(float DeltaSeconds) override;
+
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	float Health;
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }

@@ -4,6 +4,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "PlayerCharacter.h"
 
 // Sets default values
 AProjectile::AProjectile()
@@ -34,7 +35,15 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL) && OtherComp->IsSimulatingPhysics())
 	{
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 20.0f, GetActorLocation());
+	}
 
+	if (DamagesPlayer == true)
+	{
+		APlayerCharacter *P = Cast<APlayerCharacter>(OtherActor);
+		if (P != NULL)
+		{
+			P->Health -= Damage;
+		}
 	}
 
 	Destroy();
