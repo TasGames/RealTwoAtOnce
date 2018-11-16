@@ -32,6 +32,9 @@ protected:
 	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
 	float FireRate;
 
+	UPROPERTY(Category = Gameplay, EditAnywhere, BlueprintReadWrite)
+	float Health;
+
 	/** Called for side to side input */
 	void MoveRight(float Val);
 
